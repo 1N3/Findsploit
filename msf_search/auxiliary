@@ -1,0 +1,729 @@
+   admin/2wire/xslt_password_reset                                2007-08-15       normal  2Wire Cross-Site Request Forgery Password Reset Vulnerability
+   admin/appletv/appletv_display_image                                             normal  Apple TV Image Remote Control
+   admin/appletv/appletv_display_video                                             normal  Apple TV Video Remote Control
+   admin/backupexec/dump                                                           normal  Veritas Backup Exec Windows Remote File Access
+   admin/backupexec/registry                                                       normal  Veritas Backup Exec Server Registry Access
+   admin/chromecast/chromecast_reset                                               normal  Chromecast Factory Reset DoS
+   admin/chromecast/chromecast_youtube                                             normal  Chromecast YouTube Remote Control
+   admin/cisco/cisco_secure_acs_bypass                                             normal  Cisco Secure ACS Unauthorized Password Change
+   admin/cisco/vpn_3000_ftp_bypass                                2006-08-23       normal  Cisco VPN Concentrator 3000 FTP Unauthorized Administrative Access
+   admin/edirectory/edirectory_dhost_cookie                                        normal  Novell eDirectory DHOST Predictable Session Cookie
+   admin/edirectory/edirectory_edirutil                                            normal  Novell eDirectory eMBox Unauthenticated File Access
+   admin/emc/alphastor_devicemanager_exec                         2008-05-27       normal  EMC AlphaStor Device Manager Arbitrary Command Execution
+   admin/emc/alphastor_librarymanager_exec                        2008-05-27       normal  EMC AlphaStor Library Manager Arbitrary Command Execution
+   admin/hp/hp_data_protector_cmd                                 2011-02-07       normal  HP Data Protector 6.1 EXEC_CMD Command Execution
+   admin/hp/hp_imc_som_create_account                             2013-10-08       normal  HP Intelligent Management SOM Account Creation
+   admin/http/axigen_file_access                                  2012-10-31       normal  Axigen Arbitrary File Read and Delete
+   admin/http/cfme_manageiq_evm_pass_reset                        2013-11-12       normal  Red Hat CloudForms Management Engine 5.1 miq_policy/explorer SQL Injection
+   admin/http/contentkeeper_fileaccess                                             normal  ContentKeeper Web Appliance mimencode File Access
+   admin/http/dlink_dir_300_600_exec_noauth                       2013-02-04       normal  D-Link DIR-600 / DIR-300 Unauthenticated Remote Command Execution
+   admin/http/dlink_dir_645_password_extractor                                     normal  D-Link DIR 645 Password Extractor
+   admin/http/dlink_dsl320b_password_extractor                                     normal  D-Link DSL 320B Password Extractor
+   admin/http/foreman_openstack_satellite_priv_esc                2013-06-06       normal  Foreman (Red Hat OpenStack/Satellite) users/create Mass Assignment
+   admin/http/hp_web_jetadmin_exec                                2004-04-27       normal  HP Web JetAdmin 6.5 Server Arbitrary Command Execution
+   admin/http/iis_auth_bypass                                     2010-07-02       normal  MS10-065 Microsoft IIS 5 NTFS Stream Authentication Bypass
+   admin/http/intersil_pass_reset                                 2007-09-10       normal  Intersil (Boa) HTTPd Basic Authentication Password Reset
+   admin/http/iomega_storcenterpro_sessionid                                       normal  Iomega StorCenter Pro NAS Web Authentication Bypass
+   admin/http/jboss_bshdeployer                                                    normal  JBoss JMX Console Beanshell Deployer WAR Upload and Deployment
+   admin/http/jboss_deploymentfilerepository                                       normal  JBoss JMX Console DeploymentFileRepository WAR Upload and Deployment
+   admin/http/jboss_seam_exec                                     2010-07-19       normal  JBoss Seam 2 Remote Command Execution
+   admin/http/katello_satellite_priv_esc                          2014-03-24       normal  Katello (Red Hat Satellite) users/update_roles Missing Authorization
+   admin/http/linksys_e1500_e2500_exec                            2013-02-05       normal  Linksys E1500/E2500 Remote Command Execution
+   admin/http/linksys_tmunblock_admin_reset_bof                   2014-02-19       normal  Linksys WRT120N tmUnblock Stack Buffer Overflow
+   admin/http/linksys_wrt54gl_exec                                2013-01-18       normal  Linksys WRT54GL Remote Command Execution
+   admin/http/manage_engine_dc_create_admin                       2014-12-31       normal  ManageEngine Desktop Central Administrator Account Creation
+   admin/http/manageengine_dir_listing                            2015-01-28       normal  ManageEngine Multiple Products Arbitrary Directory Listing
+   admin/http/manageengine_file_download                          2015-01-28       normal  ManageEngine Multiple Products Arbitrary File Download
+   admin/http/manageengine_pmp_privesc                            2014-11-08       normal  ManageEngine Password Manager SQLAdvancedALSearchResult.cc Pro SQL Injection
+   admin/http/mutiny_frontend_read_delete                         2013-05-15       normal  Mutiny 5 Arbitrary File Read and Delete
+   admin/http/netflow_file_download                               2014-11-30       normal  ManageEngine NetFlow Analyzer Arbitrary File Download
+   admin/http/nexpose_xxe_file_read                                                normal  Nexpose XXE Arbitrary File Read
+   admin/http/novell_file_reporter_filedelete                                      normal  Novell File Reporter Agent Arbitrary File Delete
+   admin/http/openbravo_xxe                                       2013-10-30       normal  Openbravo ERP XXE Arbitrary File Read
+   admin/http/rails_devise_pass_reset                             2013-01-28       normal  Ruby on Rails Devise Authentication Password Reset
+   admin/http/scrutinizer_add_user                                2012-07-27       normal  Plixer Scrutinizer NetFlow and sFlow Analyzer HTTP Authentication Bypass
+   admin/http/sophos_wpa_traversal                                2013-04-03       normal  Sophos Web Protection Appliance patience.cgi Directory Traversal
+   admin/http/tomcat_administration                                                normal  Tomcat Administration Tool Default Access
+   admin/http/tomcat_utf8_traversal                                                normal  Tomcat UTF-8 Directory Traversal Vulnerability
+   admin/http/trendmicro_dlp_traversal                                             normal  TrendMicro Data Loss Prevention 5.5 Directory Traversal
+   admin/http/typo3_sa_2009_001                                   2009-01-20       normal  TYPO3 sa-2009-001 Weak Encryption Key File Disclosure
+   admin/http/typo3_sa_2009_002                                   2009-02-10       normal  Typo3 sa-2009-002 File Disclosure
+   admin/http/typo3_sa_2010_020                                                    normal  TYPO3 sa-2010-020 Remote File Disclosure
+   admin/http/typo3_winstaller_default_enc_keys                                    normal  TYPO3 Winstaller Default Encryption Keys
+   admin/http/vbulletin_upgrade_admin                             2013-10-09       normal  vBulletin Administrator Account Creation
+   admin/http/wp_custom_contact_forms                             2014-08-07       normal  WordPress custom-contact-forms Plugin SQL Upload
+   admin/http/zyxel_admin_password_extractor                                       normal  ZyXEL GS1510-16 Password Extractor
+   admin/kerberos/ms14_068_kerberos_checksum                      2014-11-18       normal  MS14-068 Microsfot Kerberos Checksum Validation Vulnerability
+   admin/maxdb/maxdb_cons_exec                                    2008-01-09       normal  SAP MaxDB cons.exe Remote Command Injection
+   admin/misc/sercomm_dump_config                                 2013-12-31       normal  SerComm Device Configuration Dump
+   admin/misc/wol                                                                  normal  UDP Wake-On-Lan (WOL)
+   admin/motorola/wr850g_cred                                     2004-09-24       normal  Motorola WR850G v4.03 Credentials
+   admin/ms/ms08_059_his2006                                      2008-10-14       normal  Microsoft Host Integration Server 2006 Command Execution Vulnerability
+   admin/mssql/mssql_enum                                                          normal  Microsoft SQL Server Configuration Enumerator
+   admin/mssql/mssql_enum_domain_accounts                                          normal  Microsoft SQL Server SUSER_SNAME Windows Domain Account Enumeration
+   admin/mssql/mssql_enum_domain_accounts_sqli                                     normal  Microsoft SQL Server SQLi SUSER_SNAME Windows Domain Account Enumeration
+   admin/mssql/mssql_enum_sql_logins                                               normal  Microsoft SQL Server SUSER_SNAME SQL Logins Enumeration
+   admin/mssql/mssql_escalate_dbowner                                              normal  Microsoft SQL Server Escalate Db_Owner
+   admin/mssql/mssql_escalate_dbowner_sqli                                         normal  Microsoft SQL Server SQLi Escalate Db_Owner
+   admin/mssql/mssql_escalate_execute_as                                           normal  Microsoft SQL Server Escalate EXECUTE AS
+   admin/mssql/mssql_escalate_execute_as_sqli                                      normal  Microsoft SQL Server SQLi Escalate Execute AS
+   admin/mssql/mssql_exec                                                          normal  Microsoft SQL Server xp_cmdshell Command Execution
+   admin/mssql/mssql_findandsampledata                                             normal  Microsoft SQL Server Find and Sample Data
+   admin/mssql/mssql_idf                                                           normal  Microsoft SQL Server Interesting Data Finder
+   admin/mssql/mssql_ntlm_stealer                                                  normal  Microsoft SQL Server NTLM Stealer
+   admin/mssql/mssql_ntlm_stealer_sqli                                             normal  Microsoft SQL Server SQLi NTLM Stealer
+   admin/mssql/mssql_sql                                                           normal  Microsoft SQL Server Generic Query
+   admin/mssql/mssql_sql_file                                                      normal  Microsoft SQL Server Generic Query from File
+   admin/mysql/mysql_enum                                                          normal  MySQL Enumeration Module
+   admin/mysql/mysql_sql                                                           normal  MySQL SQL Generic Query
+   admin/natpmp/natpmp_map                                                         normal  NAT-PMP Port Mapper
+   admin/officescan/tmlisten_traversal                                             normal  TrendMicro OfficeScanNT Listener Traversal Arbitrary File Access
+   admin/oracle/ora_ntlm_stealer                                  2009-04-07       normal  Oracle SMB Relay Code Execution
+   admin/oracle/oracle_login                                      2008-11-20       normal  Oracle Account Discovery
+   admin/oracle/oracle_sql                                        2007-12-07       normal  Oracle SQL Generic Query
+   admin/oracle/oraenum                                                            normal  Oracle Database Enumeration
+   admin/oracle/osb_execqr                                        2009-01-14       normal  Oracle Secure Backup exec_qr() Command Injection Vulnerability
+   admin/oracle/osb_execqr2                                       2009-08-18       normal  Oracle Secure Backup Authentication Bypass/Command Injection Vulnerability
+   admin/oracle/osb_execqr3                                       2010-07-13       normal  Oracle Secure Backup Authentication Bypass/Command Injection Vulnerability
+   admin/oracle/post_exploitation/win32exec                       2007-12-07       normal  Oracle Java execCommand (Win32)
+   admin/oracle/post_exploitation/win32upload                     2005-02-10       normal  Oracle URL Download
+   admin/oracle/sid_brute                                         2009-01-07       normal  Oracle TNS Listener SID Brute Forcer
+   admin/oracle/tnscmd                                            2009-02-01       normal  Oracle TNS Listener Command Issuer
+   admin/pop2/uw_fileretrieval                                    2000-07-14       normal  UoW pop2d Remote File Retrieval Vulnerability
+   admin/postgres/postgres_readfile                                                normal  PostgreSQL Server Generic Query
+   admin/postgres/postgres_sql                                                     normal  PostgreSQL Server Generic Query
+   admin/sap/sap_configservlet_exec_noauth                        2012-11-01       normal  SAP ConfigServlet OS Command Execution
+   admin/sap/sap_mgmt_con_osexec                                                   normal  SAP Management Console OSExecute
+   admin/scada/advantech_webaccess_dbvisitor_sqli                 2014-04-08       normal  Advantech WebAccess SQL Injection
+   admin/scada/ge_proficy_substitute_traversal                    2013-01-22       normal  GE Proficy Cimplicity WebView substitute.bcl Directory Traversal
+   admin/scada/modicon_command                                    2012-04-05       normal  Schneider Modicon Remote START/STOP Command
+   admin/scada/modicon_password_recovery                          2012-01-19       normal  Schneider Modicon Quantum Password Recovery
+   admin/scada/modicon_stux_transfer                              2012-04-05       normal  Schneider Modicon Ladder Logic Upload/Download
+   admin/scada/multi_cip_command                                  2012-01-19       normal  Allen-Bradley/Rockwell Automation EtherNet/IP CIP Commands
+   admin/scada/yokogawa_bkbcopyd_client                           2014-08-09       normal  Yokogawa BKBCopyD.exe Client
+   admin/serverprotect/file                                                        normal  TrendMicro ServerProtect File Access
+   admin/sunrpc/solaris_kcms_readfile                             2003-01-22       normal  Solaris KCMS + TTDB Arbitrary File Read
+   admin/tftp/tftp_transfer_util                                                   normal  TFTP File Transfer Utility
+   admin/tikiwiki/tikidblib                                       2006-11-01       normal  TikiWiki Information Disclosure
+   admin/vmware/poweroff_vm                                                        normal  VMWare Power Off Virtual Machine
+   admin/vmware/poweron_vm                                                         normal  VMWare Power On Virtual Machine
+   admin/vmware/tag_vm                                                             normal  VMWare Tag Virtual Machine
+   admin/vmware/terminate_esx_sessions                                             normal  VMWare Terminate ESX Login Sessions
+   admin/vnc/realvnc_41_bypass                                    2006-05-15       normal  RealVNC NULL Authentication Mode Bypass
+   admin/vxworks/apple_airport_extreme_password                                    normal  Apple Airport Extreme Password Extraction (WDBRPC)
+   admin/vxworks/dlink_i2eye_autoanswer                                            normal  D-Link i2eye Video Conference AutoAnswer (WDBRPC)
+   admin/vxworks/wdbrpc_memory_dump                                                normal  VxWorks WDB Agent Remote Memory Dump
+   admin/vxworks/wdbrpc_reboot                                                     normal  VxWorks WDB Agent Remote Reboot
+   admin/webmin/edit_html_fileaccess                              2012-09-06       normal  Webmin edit_html.cgi file Parameter Traversal Arbitrary File Access
+   admin/webmin/file_disclosure                                   2006-06-30       normal  Webmin File Disclosure
+   admin/zend/java_bridge                                         2011-03-28       normal  Zend Server Java Bridge Design Flaw Remote Code Execution
+   analyze/jtr_aix                                                                 normal  John the Ripper AIX Password Cracker
+   analyze/jtr_crack_fast                                                          normal  John the Ripper Password Cracker (Fast Mode)
+   analyze/jtr_linux                                                               normal  John the Ripper Linux Password Cracker
+   analyze/jtr_mssql_fast                                                          normal  John the Ripper MS SQL Password Cracker (Fast Mode)
+   analyze/jtr_mysql_fast                                                          normal  John the Ripper MySQL Password Cracker (Fast Mode)
+   analyze/jtr_oracle_fast                                                         normal  John the Ripper Oracle Password Cracker (Fast Mode)
+   analyze/jtr_postgres_fast                                                       normal  John the Ripper Postgres SQL Password Cracker
+   bnat/bnat_router                                                                normal  BNAT Router
+   bnat/bnat_scan                                                                  normal  BNAT Scanner
+   client/smtp/emailer                                                             normal  Generic Emailer (SMTP)
+   crawler/msfcrawler                                                              normal  Metasploit Web Crawler
+   docx/word_unc_injector                                                          normal  Microsoft Word UNC Path Injector
+   dos/cisco/ios_http_percentpercent                              2000-04-26       normal  Cisco IOS HTTP GET /%% Request Denial of Service
+   dos/dhcp/isc_dhcpd_clientid                                                     normal  ISC DHCP Zero Length ClientID Denial of Service Module
+   dos/freebsd/nfsd/nfsd_mount                                                     normal  FreeBSD Remote NFS RPC Request Denial of Service
+   dos/hp/data_protector_rds                                      2011-01-08       normal  HP Data Protector Manager RDS DOS
+   dos/http/3com_superstack_switch                                2004-06-24       normal  3Com SuperStack Switch Denial of Service
+   dos/http/apache_commons_fileupload_dos                         2014-02-06       normal  Apache Commons FileUpload and Apache Tomcat DoS
+   dos/http/apache_mod_isapi                                      2010-03-05       normal  Apache mod_isapi Dangling Pointer
+   dos/http/apache_range_dos                                      2011-08-19       normal  Apache Range Header DoS (Apache Killer)
+   dos/http/apache_tomcat_transfer_encoding                       2010-07-09       normal  Apache Tomcat Transfer-Encoding Information Disclosure and DoS
+   dos/http/canon_wireless_printer                                2013-06-18       normal  Canon Wireless Printer Denial Of Service
+   dos/http/dell_openmanage_post                                  2004-02-26       normal  Dell OpenManage POST Request Heap Overflow (win32)
+   dos/http/gzip_bomb_dos                                         2004-01-01       normal  Gzip Memory Bomb Denial Of Service
+   dos/http/hashcollision_dos                                     2011-12-28       normal  Hashtable Collisions
+   dos/http/monkey_headers                                        2013-05-30       normal  Monkey HTTPD Header Parsing Denial of Service (DoS)
+   dos/http/nodejs_pipelining                                     2013-10-18       normal  Node.js HTTP Pipelining Denial of Service
+   dos/http/novell_file_reporter_heap_bof                         2012-11-16       normal  NFR Agent Heap Overflow Vulnerability
+   dos/http/rails_action_view                                     2013-12-04       normal  Ruby on Rails Action View MIME Memory Exhaustion
+   dos/http/rails_json_float_dos                                  2013-11-22       normal  Ruby on Rails JSON Processor Floating Point Heap Overflow DoS
+   dos/http/sonicwall_ssl_format                                  2009-05-29       normal  SonicWALL SSL-VPN Format String Vulnerability
+   dos/http/webrick_regex                                         2008-08-08       normal  Ruby WEBrick::HTTP::DefaultFileHandler DoS
+   dos/http/wordpress_long_password_dos                           2014-11-20       normal  WordPress Long Password DoS
+   dos/http/wordpress_xmlrpc_dos                                  2014-08-06       normal  Wordpress XMLRPC DoS
+   dos/mdns/avahi_portzero                                        2008-11-14       normal  Avahi Source Port 0 DoS
+   dos/misc/dopewars                                              2009-10-05       normal  Dopewars Denial of Service
+   dos/misc/ibm_sametime_webplayer_dos                            2013-11-07       normal  IBM Lotus Sametime WebPlayer DoS
+   dos/misc/memcached                                                              normal  Memcached Remote Denial of Service
+   dos/ntp/ntpd_reserved_dos                                      2009-10-04       normal  NTP.org ntpd Reserved Mode Denial of Service
+   dos/pptp/ms02_063_pptp_dos                                     2002-09-26       normal  MS02-063 PPTP Malformed Control Data Kernel Denial of Service
+   dos/sap/sap_soap_rfc_eps_delete_file                                            normal  SAP SOAP EPS_DELETE_FILE File Deletion
+   dos/scada/beckhoff_twincat                                     2011-09-13       normal  Beckhoff TwinCAT SCADA PLC 2.11.0.2004 DoS
+   dos/scada/d20_tftp_overflow                                    2012-01-19       normal  General Electric D20ME TFTP Server Buffer Overflow DoS
+   dos/scada/igss9_dataserver                                     2011-12-20       normal  7-Technologies IGSS 9 IGSSdataServer.exe DoS
+   dos/scada/yokogawa_logsvr                                      2014-03-10       normal  Yokogawa CENTUM CS 3000 BKCLogSvr.exe Heap Buffer Overflow
+   dos/smtp/sendmail_prescan                                      2003-09-17       normal  Sendmail SMTP Address prescan Memory Corruption
+   dos/solaris/lpd/cascade_delete                                                  normal  Solaris LPD Arbitrary File Delete
+   dos/ssl/dtls_changecipherspec                                  2000-04-26       normal  OpenSSL DTLS ChangeCipherSpec Remote DoS
+   dos/ssl/dtls_fragment_overflow                                 2014-06-05       normal  OpenSSL DTLS Fragment Buffer Overflow DoS
+   dos/ssl/openssl_aesni                                          2013-02-05       normal  OpenSSL TLS 1.1 and 1.2 AES-NI DoS
+   dos/syslog/rsyslog_long_tag                                    2011-09-01       normal  rsyslog Long Tag Off-By-Two DoS
+   dos/tcp/junos_tcp_opt                                                           normal  Juniper JunOS Malformed TCP Option
+   dos/tcp/synflood                                                                normal  TCP SYN Flooder
+   dos/upnp/miniupnpd_dos                                         2013-03-27       normal  MiniUPnPd 1.4 Denial of Service (DoS) Exploit
+   dos/windows/appian/appian_bpm                                  2007-12-17       normal  Appian Enterprise Business Suite 5.6 SP1 DoS
+   dos/windows/browser/ms09_065_eot_integer                       2009-11-10       normal  Microsoft Windows EOT Font Table Directory Integer Overflow
+   dos/windows/ftp/filezilla_admin_user                           2005-11-07       normal  FileZilla FTP Server Admin Interface Denial of Service
+   dos/windows/ftp/filezilla_server_port                          2006-12-11       normal  FileZilla FTP Server Malformed PORT Denial of Service
+   dos/windows/ftp/guildftp_cwdlist                               2008-10-12       normal  Guild FTPd 0.999.8.11/0.999.14 Heap Corruption
+   dos/windows/ftp/iis75_ftpd_iac_bof                             2010-12-21       normal  Microsoft IIS FTP Server Encoded Response Overflow Trigger
+   dos/windows/ftp/iis_list_exhaustion                            2009-09-03       normal  Microsoft IIS FTP Server LIST Stack Exhaustion
+   dos/windows/ftp/solarftp_user                                  2011-02-22       normal  Solar FTP Server Malformed USER Denial of Service
+   dos/windows/ftp/titan626_site                                  2008-10-14       normal  Titan FTP Server 6.26.630 SITE WHO DoS
+   dos/windows/ftp/vicftps50_list                                 2008-10-24       normal  Victory FTP Server 5.0 LIST DoS
+   dos/windows/ftp/winftp230_nlst                                 2008-09-26       normal  WinFTP 2.3.0 NLST Denial of Service
+   dos/windows/ftp/xmeasy560_nlst                                 2008-10-13       normal  XM Easy Personal FTP Server 5.6.0 NLST DoS
+   dos/windows/ftp/xmeasy570_nlst                                 2009-03-27       normal  XM Easy Personal FTP Server 5.7.0 NLST DoS
+   dos/windows/games/kaillera                                     2011-07-02       normal  Kaillera 0.86 Server Denial of Service
+   dos/windows/http/ms10_065_ii6_asp_dos                          2010-09-14       normal  Microsoft IIS 6.0 ASP Stack Exhaustion Denial of Service
+   dos/windows/http/pi3web_isapi                                  2008-11-13       normal  Pi3Web ISAPI DoS
+   dos/windows/llmnr/ms11_030_dnsapi                              2011-04-12       normal  Microsoft Windows DNSAPI.dll LLMNR Buffer Underrun DoS
+   dos/windows/nat/nat_helper                                     2006-10-26       normal  Microsoft Windows NAT Helper Denial of Service
+   dos/windows/rdp/ms12_020_maxchannelids                         2012-03-16       normal  MS12-020 Microsoft Remote Desktop Use-After-Free DoS
+   dos/windows/smb/ms09_050_smb2_negotiate_pidhigh                                 normal  Microsoft SRV2.SYS SMB Negotiate ProcessID Function Table Dereference
+   dos/windows/smb/ms09_050_smb2_session_logoff                                    normal  Microsoft SRV2.SYS SMB2 Logoff Remote Kernel NULL Pointer Dereference
+   dos/windows/smb/ms10_006_negotiate_response_loop                                normal  Microsoft Windows 7 / Server 2008 R2 SMB Client Infinite Loop
+   dos/windows/smb/ms11_019_electbowser                                            normal  Microsoft Windows Browser Pool DoS
+   dos/windows/smb/vista_negotiate_stop                                            normal  Microsoft Vista SP0 SMB Negotiate Protocol DoS
+   dos/windows/smtp/ms06_019_exchange                             2004-11-12       normal  MS06-019 Exchange MODPROP Heap Overflow
+   dos/windows/ssh/sysax_sshd_kexchange                           2013-03-17       normal  Sysax Multi-Server 6.10 SSHD Key Exchange Denial of Service
+   dos/windows/tftp/pt360_write                                   2008-10-29       normal  PacketTrap TFTP Server 2.2.5459.0 DoS
+   dos/windows/tftp/solarwinds                                    2010-05-21       normal  SolarWinds TFTP Server 10.4.0.10 Denial of Service
+   dos/wireshark/capwap                                           2014-04-28       normal  Wireshark CAPWAP Dissector DoS
+   dos/wireshark/chunked                                          2007-02-22       normal  Wireshark chunked_encoding_dissector Function DOS
+   dos/wireshark/cldap                                            2011-03-01       normal  Wireshark CLDAP Dissector DOS
+   dos/wireshark/ldap                                             2008-03-28       normal  Wireshark LDAP Dissector DOS
+   fuzzers/dns/dns_fuzzer                                                          normal  DNS and DNSSEC Fuzzer
+   fuzzers/ftp/client_ftp                                                          normal  Simple FTP Client Fuzzer
+   fuzzers/ftp/ftp_pre_post                                                        normal  Simple FTP Fuzzer
+   fuzzers/http/http_form_field                                                    normal  HTTP Form Field Fuzzer
+   fuzzers/http/http_get_uri_long                                                  normal  HTTP GET Request URI Fuzzer (Incrementing Lengths)
+   fuzzers/http/http_get_uri_strings                                               normal  HTTP GET Request URI Fuzzer (Fuzzer Strings)
+   fuzzers/ntp/ntp_protocol_fuzzer                                                 normal  NTP Protocol Fuzzer
+   fuzzers/smb/smb2_negotiate_corrupt                                              normal  SMB Negotiate SMB2 Dialect Corruption
+   fuzzers/smb/smb_negotiate_corrupt                                               normal  SMB Negotiate Dialect Corruption
+   fuzzers/smtp/smtp_fuzzer                                                        normal  SMTP Simple Fuzzer
+   fuzzers/ssh/ssh_kexinit_corrupt                                                 normal  SSH Key Exchange Init Corruption
+   fuzzers/ssh/ssh_version_15                                                      normal  SSH 1.5 Version Fuzzer
+   fuzzers/ssh/ssh_version_2                                                       normal  SSH 2.0 Version Fuzzer
+   fuzzers/ssh/ssh_version_corrupt                                                 normal  SSH Version Corruption
+   fuzzers/tds/tds_login_corrupt                                                   normal  TDS Protocol Login Request Corruption Fuzzer
+   fuzzers/tds/tds_login_username                                                  normal  TDS Protocol Login Request Username Fuzzer
+   gather/alienvault_iso27001_sqli                                2014-03-30       normal  AlienVault Authenticated SQL Injection Arbitrary File Read
+   gather/alienvault_newpolicyform_sqli                           2014-05-09       normal  AlienVault Authenticated SQL Injection Arbitrary File Read
+   gather/android_browser_new_tab_cookie_theft                                     normal  Android Browser "Open in New Tab" Cookie Theft
+   gather/android_htmlfileprovider                                                 normal  Android Content Provider File Disclosure
+   gather/android_object_tag_webview_uxss                         2014-10-04       normal  Android Open Source Platform (AOSP) Browser UXSS
+   gather/android_stock_browser_uxss                                               normal  Android Open Source Platform (AOSP) Browser UXSS
+   gather/apache_rave_creds                                                        normal  Apache Rave User Information Disclosure
+   gather/apple_safari_webarchive_uxss                            2013-02-22       normal  Apple Safari .webarchive File Format UXSS
+   gather/checkpoint_hostname                                     2011-12-14       normal  CheckPoint Firewall-1 SecuRemote Topology Service Hostname Disclosure
+   gather/chromecast_wifi                                                          normal  Chromecast Wifi Enumeration
+   gather/citrix_published_applications                                            normal  Citrix MetaFrame ICA Published Applications Scanner
+   gather/citrix_published_bruteforce                                              normal  Citrix MetaFrame ICA Published Applications Bruteforcer
+   gather/coldfusion_pwd_props                                    2013-05-07       normal  ColdFusion 'password.properties' Hash Extraction
+   gather/corpwatch_lookup_id                                                      normal  CorpWatch Company ID Information Search
+   gather/corpwatch_lookup_name                                                    normal  CorpWatch Company Name Information Search
+   gather/d20pass                                                 2012-01-19       normal  General Electric D20 Password Recovery
+   gather/dns_bruteforce                                                           normal  DNS Brutefoce Enumeration
+   gather/dns_cache_scraper                                                        normal  DNS Non-Recursive Record Scraper
+   gather/dns_info                                                                 normal  DNS Basic Information Enumeration
+   gather/dns_reverse_lookup                                                       normal  DNS Reverse Lookup Enumeration
+   gather/dns_srv_enum                                                             normal  DNS Common Service Record Enumeration
+   gather/doliwamp_traversal_creds                                2014-01-12       normal  DoliWamp 'jqueryFileTree.php' Traversal Gather Credentials
+   gather/drupal_openid_xxe                                       2012-10-17       normal  Drupal OpenID External Entity Injection
+   gather/eaton_nsm_creds                                         2012-06-26       normal  Network Shutdown Module sort_values Credential Dumper
+   gather/emc_cta_xxe                                             2014-03-31       normal  EMC CTA v10.0 Unauthenticated XXE Arbitrary File Read
+   gather/enum_dns                                                                 normal  DNS Record Scanner and Enumerator 
+   gather/eventlog_cred_disclosure                                2014-11-05       normal  ManageEngine Eventlog Analyzer Managed Hosts Administrator Credential Disclosure
+   gather/external_ip                                                              normal  Discover External IP via Ifconfig.me
+   gather/f5_bigip_cookie_disclosure                                               normal  F5 BigIP Backend Cookie Disclosure
+   gather/flash_rosetta_jsonp_url_disclosure                      2014-07-08       normal  Flash "Rosetta" JSONP GET/POST Response Disclosure
+   gather/hp_enum_perfd                                                            normal  HP Operations Manager Perfd Environment Scanner
+   gather/hp_snac_domain_creds                                    2013-09-09       normal  HP ProCurve SNAC Domain Controller Credential Dumper
+   gather/huawei_wifi_info                                        2013-11-11       normal  Huawei Datacard Information Disclosure Vulnerability
+   gather/ibm_sametime_enumerate_users                            2013-12-27       normal  IBM Lotus Notes Sametime User Enumeration
+   gather/ibm_sametime_room_brute                                 2013-12-27       normal  IBM Lotus Notes Sametime Room Name Bruteforce
+   gather/ibm_sametime_version                                    2013-12-27       normal  IBM Lotus Sametime Version Enumeration
+   gather/impersonate_ssl                                                          normal  HTTP SSL Certificate Impersonation
+   gather/joomla_weblinks_sqli                                    2014-03-02       normal  Joomla weblinks-categories Unauthenticated SQL Injection Arbitrary File Read
+   gather/konica_minolta_pwd_extract                                               normal  Konica Minolta Password Extractor
+   gather/mantisbt_admin_sqli                                     2014-02-28       normal  MantisBT Admin SQL Injection Arbitrary File Read
+   gather/mcafee_epo_xxe                                          2015-01-06       normal  McAfee ePolicy Orchestrator Authenticated XXE Credentials Exposure
+   gather/memcached_extractor                                                      normal  Memcached Extractor
+   gather/mongodb_js_inject_collection_enum                       2014-06-07       normal  MongoDB NoSQL Collection Enumeration Via Injection
+   gather/mybb_db_fingerprint                                     2014-02-13       normal  MyBB Database Fingerprint
+   gather/natpmp_external_address                                                  normal  NAT-PMP External Address Scanner
+   gather/search_email_collector                                                   normal  Search Engine Domain Email Address Collector
+   gather/shodan_search                                                            normal  Shodan Search
+   gather/trackit_sql_domain_creds                                2014-10-07       normal  BMC / Numara Track-It! Domain Administrator and SQL Server User Password Disclosure
+   gather/vbulletin_vote_sqli                                     2013-03-24       normal  vBulletin Password Collector via nodeid SQL Injection
+   gather/wp_w3_total_cache_hash_extract                                           normal  W3-Total-Cache Wordpress-plugin 0.9.2.4 (or before) Username and Hash Extract
+   gather/xbmc_traversal                                          2012-11-04       normal  XBMC Web Server Directory Traversal
+   gather/xerox_pwd_extract                                                        normal  Xerox Administrator Console Password Extractor
+   gather/xerox_workcentre_5xxx_ldap                                               normal  Xerox Workcentre 5735 LDAP Service Redential Extractor
+   metamodule/domino                                                               normal  Domino Metamodule
+   metamodule/firewall_egress                                                      normal  Segmentation and Firewall Testing
+   parser/unattend                                                                 normal  Auxilliary Parser Windows Unattend Passwords
+   pdf/foxit/authbypass                                           2009-03-09       normal  Foxit Reader Authorization Bypass
+   scanner/afp/afp_server_info                                                     normal  Apple Filing Protocol Info Enumerator
+   scanner/backdoor/energizer_duo_detect                                           normal  Energizer DUO Trojan Scanner
+   scanner/chargen/chargen_probe                                  1996-02-08       normal  Chargen Probe Utility
+   scanner/couchdb/couchdb_enum                                                    normal  CouchDB Enum Utility
+   scanner/couchdb/couchdb_login                                                   normal  CouchDB Login Utility
+   scanner/db2/db2_version                                                         normal  DB2 Probe Utility
+   scanner/db2/discovery                                                           normal  DB2 Discovery Service Detection
+   scanner/dcerpc/endpoint_mapper                                                  normal  Endpoint Mapper Service Discovery
+   scanner/dcerpc/hidden                                                           normal  Hidden DCERPC Service Discovery
+   scanner/dcerpc/management                                                       normal  Remote Management Interface Discovery
+   scanner/dcerpc/tcp_dcerpc_auditor                                               normal  DCERPC TCP Service Auditor
+   scanner/dcerpc/windows_deployment_services                                      normal  Microsoft Windows Deployment Services Unattend Retrieval
+   scanner/dect/call_scanner                                                       normal  DECT Call Scanner
+   scanner/dect/station_scanner                                                    normal  DECT Base Station Scanner
+   scanner/discovery/arp_sweep                                                     normal  ARP Sweep Local Network Discovery
+   scanner/discovery/empty_udp                                                     normal  UDP Empty Prober
+   scanner/discovery/ipv6_multicast_ping                                           normal  IPv6 Link Local/Node Local Ping Discovery
+   scanner/discovery/ipv6_neighbor                                                 normal  IPv6 Local Neighbor Discovery
+   scanner/discovery/ipv6_neighbor_router_advertisement                            normal  IPv6 Local Neighbor Discovery Using Router Advertisement
+   scanner/discovery/udp_probe                                                     normal  UDP Service Prober
+   scanner/discovery/udp_sweep                                                     normal  UDP Service Sweeper
+   scanner/dlsw/dlsw_leak_capture                                 2014-11-17       normal  Cisco DLSw Information Disclosure Scanner
+   scanner/dns/dns_amp                                                             normal  DNS Amplification Scanner
+   scanner/elasticsearch/indices_enum                                              normal  ElasticSearch Indices Enumeration Utility
+   scanner/emc/alphastor_devicemanager                                             normal  EMC AlphaStor Device Manager Service
+   scanner/emc/alphastor_librarymanager                                            normal  EMC AlphaStor Library Manager Service
+   scanner/finger/finger_users                                                     normal  Finger Service User Enumerator
+   scanner/ftp/anonymous                                                           normal  Anonymous FTP Access Detection
+   scanner/ftp/ftp_version                                                         normal  FTP Version Scanner
+   scanner/ftp/titanftp_xcrc_traversal                            2010-06-15       normal  Titan FTP XCRC Directory Traversal Information Disclosure
+   scanner/h323/h323_version                                                       normal  H.323 Version Scanner
+   scanner/http/a10networks_ax_directory_traversal                2014-01-28       normal  A10 Networks AX Loadbalancer Directory Traversal
+   scanner/http/adobe_xml_inject                                                   normal  Adobe XML External Entity Injection
+   scanner/http/allegro_rompager_misfortune_cookie                2014-12-17       normal  Allegro Software RomPager 'Misfortune Cookie' (CVE-2014-9222) Scanner
+   scanner/http/apache_activemq_source_disclosure                                  normal  Apache ActiveMQ JSP Files Source Disclosure
+   scanner/http/apache_activemq_traversal                                          normal  Apache ActiveMQ Directory Traversal
+   scanner/http/apache_mod_cgi_bash_env                           2014-09-24       normal  Apache mod_cgi Bash Environment Variable RCE Scanner
+   scanner/http/apache_userdir_enum                                                normal  Apache "mod_userdir" User Enumeration
+   scanner/http/atlassian_crowd_fileaccess                                         normal  Atlassian Crowd XML Entity Expansion Remote File Access
+   scanner/http/axis_local_file_include                                            normal  Apache Axis2 v1.4.1 Local File Inclusion
+   scanner/http/backup_file                                                        normal  HTTP Backup File Scanner
+   scanner/http/barracuda_directory_traversal                     2010-10-08       normal  Barracuda Multiple Product "locale" Directory Traversal
+   scanner/http/bitweaver_overlay_type_traversal                  2012-10-23       normal  Bitweaver overlay_type Directory Traversal
+   scanner/http/blind_sql_query                                                    normal  HTTP Blind SQL Injection Scanner
+   scanner/http/bmc_trackit_passwd_reset                          2014-12-09       normal  BMC TrackIt! Unauthenticated Arbitrary User Password Change
+   scanner/http/brute_dirs                                                         normal  HTTP Directory Brute Force Scanner
+   scanner/http/canon_wireless                                    2013-06-18       normal  Canon Printer Wireless Configuration Disclosure
+   scanner/http/cert                                                               normal  HTTP SSL Certificate Checker
+   scanner/http/cisco_asa_asdm                                                     normal  Cisco ASA ASDM Bruteforce Login Utility
+   scanner/http/cisco_device_manager                              2000-10-26       normal  Cisco Device HTTP Device Manager Access
+   scanner/http/cisco_ios_auth_bypass                             2001-06-27       normal  Cisco IOS HTTP Unauthorized Administrative Access
+   scanner/http/cisco_ironport_enum                                                normal  Cisco Ironport Bruteforce Login Utility
+   scanner/http/cisco_nac_manager_traversal                                        normal  Cisco Network Access Manager Directory Traversal Vulnerability
+   scanner/http/cisco_ssl_vpn                                                      normal  Cisco SSL VPN Bruteforce Login Utility
+   scanner/http/cisco_ssl_vpn_priv_esc                            2014-04-09       normal  Cisco ASA SSL VPN Privilege Escalation Vulnerability
+   scanner/http/clansphere_traversal                              2012-10-23       normal  ClanSphere 2011.3 Local File Inclusion Vulnerability
+   scanner/http/cold_fusion_version                                                normal  ColdFusion Version Scanner
+   scanner/http/coldfusion_locale_traversal                                        normal  ColdFusion Server Check
+   scanner/http/concrete5_member_list                                              normal  Concrete5 Member List Enumeration
+   scanner/http/copy_of_file                                                       normal  HTTP Copy File Scanner
+   scanner/http/crawler                                                            normal  Web Site Crawler
+   scanner/http/dell_idrac                                                         normal  Dell iDRAC Default Login
+   scanner/http/dir_listing                                                        normal  HTTP Directory Listing Scanner
+   scanner/http/dir_scanner                                                        normal  HTTP Directory Scanner
+   scanner/http/dir_webdav_unicode_bypass                                          normal  MS09-020 IIS6 WebDAV Unicode Auth Bypass Directory Scanner
+   scanner/http/dlink_dir_300_615_http_login                                       normal  D-Link DIR-300A / DIR-320 / DIR-615D HTTP Login Utility
+   scanner/http/dlink_dir_615h_http_login                                          normal  D-Link DIR-615H HTTP Login Utility
+   scanner/http/dlink_dir_session_cgi_http_login                                   normal  D-Link DIR-300B / DIR-600B / DIR-815 / DIR-645 HTTP Login Utility
+   scanner/http/dlink_user_agent_backdoor                         2013-10-12       normal  DLink User-Agent Backdoor Scanner
+   scanner/http/dolibarr_login                                                     normal  Dolibarr ERP/CRM Login Utility
+   scanner/http/drupal_views_user_enum                            2010-07-02       normal  Drupal Views Module Users Enumeration
+   scanner/http/ektron_cms400net                                                   normal  Ektron CMS400.NET Default Password Scanner
+   scanner/http/enum_wayback                                                       normal  Archive.org Stored Domain URLs
+   scanner/http/error_sql_injection                                                normal  HTTP Error Based SQL Injection Scanner
+   scanner/http/etherpad_duo_login                                                 normal  EtherPAD Duo Login Bruteforce Utility
+   scanner/http/file_same_name_dir                                                 normal  HTTP File Same Name Directory Scanner
+   scanner/http/files_dir                                                          normal  HTTP Interesting File Scanner
+   scanner/http/frontpage_login                                                    normal  FrontPage Server Extensions Anonymous Login Scanner
+   scanner/http/groupwise_agents_http_traversal                                    normal  Novell Groupwise Agents HTTP Directory Traversal
+   scanner/http/hp_imc_bims_downloadservlet_traversal                              normal  HP Intelligent Management BIMS DownloadServlet Directory Traversal
+   scanner/http/hp_imc_faultdownloadservlet_traversal                              normal  HP Intelligent Management FaultDownloadServlet Directory Traversal
+   scanner/http/hp_imc_ictdownloadservlet_traversal                                normal  HP Intelligent Management IctDownloadServlet Directory Traversal
+   scanner/http/hp_imc_reportimgservlt_traversal                                   normal  HP Intelligent Management ReportImgServlt Directory Traversal
+   scanner/http/hp_imc_som_file_download                                           normal  HP Intelligent Management SOM FileDownloadServlet Arbitrary Download
+   scanner/http/hp_sitescope_getfileinternal_fileaccess                            normal  HP SiteScope SOAP Call getFileInternal Remote File Access
+   scanner/http/hp_sitescope_getsitescopeconfiguration                             normal  HP SiteScope SOAP Call getSiteScopeConfiguration Configuration Access
+   scanner/http/hp_sitescope_loadfilecontent_fileaccess                            normal  HP SiteScope SOAP Call loadFileContent Remote File Access
+   scanner/http/http_header                                                        normal  HTTP Header Detection
+   scanner/http/http_hsts                                                          normal  HTTP Strict Transport Security (HSTS) Detection
+   scanner/http/http_put                                                           normal  HTTP Writable Path PUT/DELETE File Access
+   scanner/http/http_traversal                                                     normal  Generic HTTP Directory Traversal Utility
+   scanner/http/http_version                                                       normal  HTTP Version Detection
+   scanner/http/httpbl_lookup                                                      normal  Http:BL Lookup
+   scanner/http/iis_internal_ip                                                    normal  Microsoft IIS HTTP Internal IP Disclosure
+   scanner/http/infovista_enum                                                     normal  InfoVista VistaPortal Application Bruteforce Login Utility
+   scanner/http/jboss_status                                                       normal  JBoss Status Servlet Information Gathering
+   scanner/http/jboss_vulnscan                                                     normal  JBoss Vulnerability Scanner
+   scanner/http/jenkins_enum                                                       normal  Jenkins Enumeration
+   scanner/http/joomla_bruteforce_login                                            normal  Joomla Bruteforce Login Utility
+   scanner/http/joomla_pages                                                       normal  Joomla Page Scanner
+   scanner/http/joomla_plugins                                                     normal  Joomla Plugins Scanner
+   scanner/http/joomla_version                                                     normal  Joomla Version Scanner
+   scanner/http/linksys_e1500_traversal                                            normal  Linksys E1500 Directory Traversal Vulnerability
+   scanner/http/litespeed_source_disclosure                                        normal  LiteSpeed Source Code Disclosure/Download
+   scanner/http/lucky_punch                                                        normal  HTTP Microsoft SQL Injection Table XSS Infection
+   scanner/http/majordomo2_directory_traversal                    2011-03-08       normal  Majordomo2 _list_file_get() Directory Traversal
+   scanner/http/manageengine_deviceexpert_traversal               2012-03-18       normal  ManageEngine DeviceExpert 5.6 ScheduleResultViewer FileName Traversal
+   scanner/http/manageengine_deviceexpert_user_creds              2014-08-28       normal  ManageEngine DeviceExpert User Credentials
+   scanner/http/manageengine_securitymanager_traversal            2012-10-19       normal  ManageEngine SecurityManager Plus 5.5 Directory Traversal
+   scanner/http/mediawiki_svg_fileaccess                                           normal  MediaWiki SVG XML Entity Expansion Remote File Access
+   scanner/http/mod_negotiation_brute                                              normal  Apache HTTPD mod_negotiation Filename Bruter
+   scanner/http/mod_negotiation_scanner                                            normal  Apache HTTPD mod_negotiation Scanner
+   scanner/http/ms09_020_webdav_unicode_bypass                                     normal  MS09-020 IIS6 WebDAV Unicode Authentication Bypass
+   scanner/http/netdecision_traversal                             2012-03-07       normal  NetDecision NOCVision Server Directory Traversal
+   scanner/http/netgear_sph200d_traversal                                          normal  Netgear SPH200D Directory Traversal Vulnerability
+   scanner/http/nginx_source_disclosure                                            normal  Nginx Source Code Disclosure/Download
+   scanner/http/novell_file_reporter_fsfui_fileaccess             2012-11-16       normal  NFR Agent FSFUI Record Arbitrary Remote File Access
+   scanner/http/novell_file_reporter_srs_fileaccess               2012-11-16       normal  NFR Agent SRS Record Arbitrary Remote File Access
+   scanner/http/novell_mdm_creds                                                   normal  Novell Zenworks Mobile Device Managment Admin Credentials
+   scanner/http/ntlm_info_enumeration                                              normal  Host Information Enumeration via NTLM Authentication
+   scanner/http/open_proxy                                                         normal  HTTP Open Proxy Detection
+   scanner/http/openmind_messageos_login                                           normal  OpenMind Message-OS Portal Login Brute Force Utility
+   scanner/http/options                                                            normal  HTTP Options Detection
+   scanner/http/oracle_demantra_database_credentials_leak         2014-02-28       normal  Oracle Demantra Database Credentials Leak
+   scanner/http/oracle_demantra_file_retrieval                    2014-02-28       normal  Oracle Demantra Arbitrary File Retrieval with Authentication Bypass
+   scanner/http/oracle_ilom_login                                                  normal  Oracle ILO Manager Login Brute Force Utility
+   scanner/http/owa_login                                                          normal  Outlook Web App (OWA) Brute Force Utility
+   scanner/http/pocketpad_login                                                    normal  PocketPAD Login Bruteforce Force Utility
+   scanner/http/prev_dir_same_name_file                                            normal  HTTP Previous Directory File Scanner
+   scanner/http/radware_appdirector_enum                                           normal  Radware AppDirector Bruteforce Login Utility
+   scanner/http/rails_json_yaml_scanner                                            normal  Ruby on Rails JSON Processor YAML Deserialization Scanner
+   scanner/http/rails_mass_assignment                                              normal  Ruby On Rails Attributes Mass Assignment Scanner
+   scanner/http/rails_xml_yaml_scanner                                             normal  Ruby on Rails XML Processor YAML Deserialization Scanner
+   scanner/http/replace_ext                                                        normal  HTTP File Extension Scanner
+   scanner/http/rewrite_proxy_bypass                                               normal  Apache Reverse Proxy Bypass Vulnerability Scanner
+   scanner/http/rfcode_reader_enum                                                 normal  RFCode Reader Web Interface Login / Bruteforce Utility
+   scanner/http/robots_txt                                                         normal  HTTP Robots.txt Content Scanner
+   scanner/http/s40_traversal                                     2011-04-07       normal  S40 0.4.2 CMS Directory Traversal Vulnerability
+   scanner/http/sap_businessobjects_user_brute                                     normal  SAP BusinessObjects User Bruteforcer
+   scanner/http/sap_businessobjects_user_brute_web                                 normal  SAP BusinessObjects Web User Bruteforcer
+   scanner/http/sap_businessobjects_user_enum                                      normal  SAP BusinessObjects User Enumeration
+   scanner/http/sap_businessobjects_version_enum                                   normal  SAP BusinessObjects Version Detection
+   scanner/http/scraper                                                            normal  HTTP Page Scraper
+   scanner/http/sentry_cdu_enum                                                    normal  Sentry Switched CDU Bruteforce Login Utility
+   scanner/http/sevone_enum                                       2013-06-07       normal  SevOne Network Performance Management Application Brute Force Login Utility
+   scanner/http/simple_webserver_traversal                        2013-01-03       normal  Simple Web Server 2.3-RC1 Directory Traversal
+   scanner/http/smt_ipmi_49152_exposure                           2014-06-19       normal  Supermicro Onboard IPMI Port 49152 Sensitive File Exposure
+   scanner/http/smt_ipmi_cgi_scanner                              2013-11-06       normal  Supermicro Onboard IPMI CGI Vulnerability Scanner
+   scanner/http/smt_ipmi_static_cert_scanner                      2013-11-06       normal  Supermicro Onboard IPMI Static SSL Certificate Scanner
+   scanner/http/smt_ipmi_url_redirect_traversal                   2013-11-06       normal  Supermicro Onboard IPMI url_redirect.cgi Authenticated Directory Traversal
+   scanner/http/soap_xml                                                           normal  HTTP SOAP Verb/Noun Brute Force Scanner
+   scanner/http/sockso_traversal                                  2012-03-14       normal  Sockso Music Host Server 1.5 Directory Traversal
+   scanner/http/splunk_web_login                                                   normal  Splunk Web Interface Login Utility
+   scanner/http/squid_pivot_scanning                                               normal  Squid Proxy Port Scanner
+   scanner/http/squiz_matrix_user_enum                            2011-11-08       normal  Squiz Matrix User Enumeration Scanner
+   scanner/http/ssl                                                                normal  HTTP SSL Certificate Information
+   scanner/http/ssl_version                                       2014-10-14       normal  HTTP SSL/TLS Version Detection (POODLE scanner)
+   scanner/http/support_center_plus_directory_traversal           2014-01-28       normal  ManageEngine Support Center Plus Directory Traversal
+   scanner/http/svn_scanner                                                        normal  HTTP Subversion Scanner
+   scanner/http/svn_wcdb_scanner                                                   normal  SVN wc.db Scanner
+   scanner/http/sybase_easerver_traversal                         2011-05-25       normal  Sybase Easerver 6.3 Directory Traversal
+   scanner/http/symantec_brightmail_logfile                       2012-11-30       normal  Symantec Messaging Gateway 9.5 Log File Download Vulnerability
+   scanner/http/titan_ftp_admin_pwd                                                normal  Titan FTP Administrative Password Disclosure
+   scanner/http/tomcat_enum                                                        normal  Apache Tomcat User Enumeration
+   scanner/http/tplink_traversal_noauth                                            normal  TP-Link Wireless Lite N Access Point Directory Traversal Vulnerability
+   scanner/http/trace                                                              normal  HTTP TRACE Detection
+   scanner/http/trace_axd                                                          normal  HTTP trace.axd Content Scanner
+   scanner/http/typo3_bruteforce                                                   normal  Typo3 Login Bruteforcer
+   scanner/http/vcms_login                                                         normal  V-CMS Login Utility
+   scanner/http/verb_auth_bypass                                                   normal  HTTP Verb Authentication Bypass Scanner
+   scanner/http/vhost_scanner                                                      normal  HTTP Virtual Host Brute Force Scanner
+   scanner/http/vmware_server_dir_trav                                             normal  VMware Server Directory Traversal Vulnerability
+   scanner/http/vmware_update_manager_traversal                   2011-11-21       normal  VMWare Update Manager 4 Directory Traversal
+   scanner/http/wangkongbao_traversal                                              normal  WANGKONGBAO CNS-1000 and 1100 UTM Directory Traversal
+   scanner/http/web_vulndb                                                         normal  HTTP Vuln Scanner
+   scanner/http/webdav_internal_ip                                                 normal  HTTP WebDAV Internal IP Scanner
+   scanner/http/webdav_scanner                                                     normal  HTTP WebDAV Scanner
+   scanner/http/webdav_website_content                                             normal  HTTP WebDAV Website Content Scanner
+   scanner/http/webpagetest_traversal                             2012-07-13       normal  WebPageTest Directory Traversal
+   scanner/http/wildfly_traversal                                 2014-10-22       normal  WildFly Directory Traversal
+   scanner/http/wordpress_ghost_scanner                                            normal  WordPress XMLRPC GHOST Vulnerability Scanner
+   scanner/http/wordpress_login_enum                                               normal  WordPress Brute Force and User Enumeration Utility
+   scanner/http/wordpress_pingback_access                                          normal  Wordpress Pingback Locator
+   scanner/http/wordpress_scanner                                                  normal  Wordpress Scanner
+   scanner/http/xpath                                                              normal  HTTP Blind XPATH 1.0 Injector
+   scanner/http/yaws_traversal                                    2011-11-25       normal  Yaws Web Server Directory Traversal
+   scanner/http/zenworks_assetmanagement_fileaccess                                normal  Novell ZENworks Asset Management 7.5 Remote File Access
+   scanner/http/zenworks_assetmanagement_getconfig                                 normal  Novell ZENworks Asset Management 7.5 Configuration Access
+   scanner/imap/imap_version                                                       normal  IMAP4 Banner Grabber
+   scanner/ip/ipidseq                                                              normal  IPID Sequence Scanner
+   scanner/ipmi/ipmi_cipher_zero                                  2013-06-20       normal  IPMI 2.0 Cipher Zero Authentication Bypass Scanner
+   scanner/ipmi/ipmi_dumphashes                                   2013-06-20       normal  IPMI 2.0 RAKP Remote SHA1 Password Hash Retreival
+   scanner/ipmi/ipmi_version                                                       normal  IPMI Information Discovery
+   scanner/kademlia/server_info                                                    normal  Gather Kademlia Server Information
+   scanner/lotus/lotus_domino_hashes                                               normal  Lotus Domino Password Hash Collector
+   scanner/lotus/lotus_domino_login                                                normal  Lotus Domino Brute Force Utility
+   scanner/lotus/lotus_domino_version                                              normal  Lotus Domino Version
+   scanner/misc/cctv_dvr_login                                                     normal  CCTV DVR Login Scanning Utility
+   scanner/misc/dvr_config_disclosure                                              normal  Multiple DVR Manufacturers Configuration Disclosure
+   scanner/misc/ib_service_mgr_info                                                normal  Borland InterBase Services Manager Information
+   scanner/misc/oki_scanner                                                        normal  OKI Printer Default Login Credential Scanner
+   scanner/misc/poisonivy_control_scanner                                          normal  Poison Ivy Command and Control Scanner
+   scanner/misc/raysharp_dvr_passwords                                             normal  Ray Sharp DVR Password Retriever
+   scanner/misc/redis_server                                                       normal  Redis-server Scanner
+   scanner/misc/rosewill_rxs3211_passwords                                         normal  Rosewill RXS-3211 IP Camera Password Retriever
+   scanner/misc/sercomm_backdoor_scanner                          2013-12-31       normal  SerComm Network Device Backdoor Detection
+   scanner/misc/sunrpc_portmapper                                                  normal  SunRPC Portmap Program Enumerator
+   scanner/misc/zenworks_preboot_fileaccess                                        normal  Novell ZENworks Configuration Management Preboot Service Remote File Access
+   scanner/mongodb/mongodb_login                                                   normal  MongoDB Login Utility
+   scanner/motorola/timbuktu_udp                                  2009-09-25       normal  Motorola Timbuktu Service Detection
+   scanner/msf/msf_rpc_login                                                       normal  Metasploit RPC Interface Login Utility
+   scanner/msf/msf_web_login                                                       normal  Metasploit Web Interface Login Utility
+   scanner/mssql/mssql_hashdump                                                    normal  MSSQL Password Hashdump
+   scanner/mssql/mssql_ping                                                        normal  MSSQL Ping Utility
+   scanner/mssql/mssql_schemadump                                                  normal  MSSQL Schema Dump
+   scanner/mysql/mysql_authbypass_hashdump                        2012-06-09       normal  MySQL Authentication Bypass Password Dump
+   scanner/mysql/mysql_file_enum                                                   normal  MYSQL File/Directory Enumerator
+   scanner/mysql/mysql_hashdump                                                    normal  MYSQL Password Hashdump
+   scanner/mysql/mysql_schemadump                                                  normal  MYSQL Schema Dump
+   scanner/mysql/mysql_version                                                     normal  MySQL Server Version Enumeration
+   scanner/natpmp/natpmp_portscan                                                  normal  NAT-PMP External Port Scanner
+   scanner/nessus/nessus_ntp_login                                                 normal  Nessus NTP Login Utility
+   scanner/nessus/nessus_xmlrpc_login                                              normal  Nessus XMLRPC Interface Login Utility
+   scanner/nessus/nessus_xmlrpc_ping                                               normal  Nessus XMLRPC Interface Ping Utility
+   scanner/netbios/nbname                                                          normal  NetBIOS Information Discovery
+   scanner/netbios/nbname_probe                                                    normal  NetBIOS Information Discovery Prober
+   scanner/nexpose/nexpose_api_login                                               normal  NeXpose API Interface Login Utility
+   scanner/nfs/nfsmount                                                            normal  NFS Mount Scanner
+   scanner/ntp/ntp_monlist                                                         normal  NTP Monitor List Scanner
+   scanner/ntp/ntp_peer_list_dos                                  2014-08-25       normal  NTP Mode 7 PEER_LIST DoS Scanner
+   scanner/ntp/ntp_peer_list_sum_dos                              2014-08-25       normal  NTP Mode 7 PEER_LIST_SUM DoS Scanner
+   scanner/ntp/ntp_readvar                                                         normal  NTP Clock Variables Disclosure
+   scanner/ntp/ntp_req_nonce_dos                                  2014-08-25       normal  NTP Mode 6 REQ_NONCE DRDoS Scanner
+   scanner/ntp/ntp_reslist_dos                                    2014-08-25       normal  NTP Mode 7 GET_RESTRICT DRDoS Scanner
+   scanner/ntp/ntp_unsettrap_dos                                  2014-08-25       normal  NTP Mode 6 UNSETTRAP DRDoS Scanner
+   scanner/openvas/openvas_gsad_login                                              normal  OpenVAS gsad Web Interface Login Utility
+   scanner/openvas/openvas_omp_login                                               normal  OpenVAS OMP Login Utility
+   scanner/openvas/openvas_otp_login                                               normal  OpenVAS OTP Login Utility
+   scanner/oracle/emc_sid                                                          normal  Oracle Enterprise Manager Control SID Discovery
+   scanner/oracle/isqlplus_login                                                   normal  Oracle iSQL*Plus Login Utility
+   scanner/oracle/isqlplus_sidbrute                                                normal  Oracle iSQLPlus SID Check
+   scanner/oracle/oracle_hashdump                                                  normal  Oracle Password Hashdump
+   scanner/oracle/oracle_login                                                     normal  Oracle RDBMS Login Utility
+   scanner/oracle/sid_brute                                                        normal  Oracle TNS Listener SID Bruteforce
+   scanner/oracle/sid_enum                                        2009-01-07       normal  Oracle TNS Listener SID Enumeration
+   scanner/oracle/spy_sid                                                          normal  Oracle Application Server Spy Servlet SID Enumeration
+   scanner/oracle/tnslsnr_version                                 2009-01-07       normal  Oracle TNS Listener Service Version Query
+   scanner/oracle/tnspoison_checker                               2012-04-18       normal  Oracle TNS Listener Checker
+   scanner/oracle/xdb_sid                                                          normal  Oracle XML DB SID Discovery
+   scanner/oracle/xdb_sid_brute                                                    normal  Oracle XML DB SID Discovery via Brute Force
+   scanner/pcanywhere/pcanywhere_login                                             normal  PcAnywhere Login Scanner
+   scanner/pcanywhere/pcanywhere_tcp                                               normal  PcAnywhere TCP Service Discovery
+   scanner/pcanywhere/pcanywhere_udp                                               normal  PcAnywhere UDP Service Discovery
+   scanner/pop3/pop3_version                                                       normal  POP3 Banner Grabber
+   scanner/portscan/ack                                                            normal  TCP ACK Firewall Scanner
+   scanner/portscan/ftpbounce                                                      normal  FTP Bounce Port Scanner
+   scanner/portscan/syn                                                            normal  TCP SYN Port Scanner
+   scanner/portscan/tcp                                                            normal  TCP Port Scanner
+   scanner/portscan/xmas                                                           normal  TCP "XMas" Port Scanner
+   scanner/postgres/postgres_dbname_flag_injection                                 normal  PostgreSQL Database Name Command Line Flag Injection
+   scanner/postgres/postgres_hashdump                                              normal  Postgres Password Hashdump
+   scanner/postgres/postgres_schemadump                                            normal  Postgres Schema Dump
+   scanner/postgres/postgres_version                                               normal  PostgreSQL Version Probe
+   scanner/printer/printer_download_file                                           normal  Printer File Download Scanner
+   scanner/printer/printer_env_vars                                                normal  Printer Environment Variables Scanner
+   scanner/printer/printer_list_dir                                                normal  Printer Directory Listing Scanner
+   scanner/printer/printer_list_volumes                                            normal  Printer Volume Listing Scanner
+   scanner/printer/printer_ready_message                                           normal  Printer Ready Message Scanner
+   scanner/printer/printer_version_info                                            normal  Printer Version Information Scanner
+   scanner/quake/server_info                                                       normal  Gather Quake Server Information
+   scanner/rdp/ms12_020_check                                                      normal  MS12-020 Microsoft Remote Desktop Checker
+   scanner/rogue/rogue_recv                                                        normal  Rogue Gateway Detection: Receiver
+   scanner/rogue/rogue_send                                                        normal  Rogue Gateway Detection: Sender
+   scanner/rservices/rexec_login                                                   normal  rexec Authentication Scanner
+   scanner/rservices/rlogin_login                                                  normal  rlogin Authentication Scanner
+   scanner/rservices/rsh_login                                                     normal  rsh Authentication Scanner
+   scanner/rsync/modules_list                                                      normal  Rsync Unauthenticated List Command
+   scanner/sap/sap_ctc_verb_tampering_user_mgmt                                    normal  SAP CTC Service Verb Tampering User Management
+   scanner/sap/sap_hostctrl_getcomputersystem                                      normal  SAP Host Agent Information Disclosure
+   scanner/sap/sap_icf_public_info                                                 normal  SAP ICF /sap/public/info Service Sensitive Information Gathering
+   scanner/sap/sap_icm_urlscan                                                     normal  SAP URL Scanner
+   scanner/sap/sap_mgmt_con_abaplog                                                normal  SAP Management Console ABAP Syslog Disclosure
+   scanner/sap/sap_mgmt_con_brute_login                                            normal  SAP Management Console Brute Force
+   scanner/sap/sap_mgmt_con_extractusers                                           normal  SAP Management Console Extract Users
+   scanner/sap/sap_mgmt_con_getaccesspoints                                        normal  SAP Management Console Get Access Points
+   scanner/sap/sap_mgmt_con_getenv                                                 normal  SAP Management Console getEnvironment
+   scanner/sap/sap_mgmt_con_getlogfiles                                            normal  SAP Management Console Get Logfile
+   scanner/sap/sap_mgmt_con_getprocesslist                                         normal  SAP Management Console GetProcessList
+   scanner/sap/sap_mgmt_con_getprocessparameter                                    normal  SAP Management Console Get Process Parameters
+   scanner/sap/sap_mgmt_con_instanceproperties                                     normal  SAP Management Console Instance Properties
+   scanner/sap/sap_mgmt_con_listlogfiles                                           normal  SAP Management Console List Logfiles
+   scanner/sap/sap_mgmt_con_startprofile                                           normal  SAP Management Console getStartProfile
+   scanner/sap/sap_mgmt_con_version                                                normal  SAP Management Console Version Detection
+   scanner/sap/sap_router_info_request                                             normal  SAPRouter Admin Request
+   scanner/sap/sap_router_portscanner                                              normal  SAPRouter Port Scanner
+   scanner/sap/sap_service_discovery                                               normal  SAP Service Discovery
+   scanner/sap/sap_smb_relay                                                       normal  SAP SMB Relay Abuse
+   scanner/sap/sap_soap_bapi_user_create1                                          normal  SAP /sap/bc/soap/rfc SOAP Service BAPI_USER_CREATE1 Function User Creation
+   scanner/sap/sap_soap_rfc_brute_login                                            normal  SAP SOAP Service RFC_PING Login Brute Forcer
+   scanner/sap/sap_soap_rfc_dbmcli_sxpg_call_system_command_exec                   normal  SAP /sap/bc/soap/rfc SOAP Service SXPG_CALL_SYSTEM Function Command Injection
+   scanner/sap/sap_soap_rfc_dbmcli_sxpg_command_exec                               normal  SAP /sap/bc/soap/rfc SOAP Service SXPG_COMMAND_EXEC Function Command Injection
+   scanner/sap/sap_soap_rfc_eps_get_directory_listing                              normal  SAP SOAP RFC EPS_GET_DIRECTORY_LISTING Directories Information Disclosure
+   scanner/sap/sap_soap_rfc_pfl_check_os_file_existence                            normal  SAP SOAP RFC PFL_CHECK_OS_FILE_EXISTENCE File Existence Check
+   scanner/sap/sap_soap_rfc_ping                                                   normal  SAP /sap/bc/soap/rfc SOAP Service RFC_PING Function Service Discovery
+   scanner/sap/sap_soap_rfc_read_table                                             normal  SAP /sap/bc/soap/rfc SOAP Service RFC_READ_TABLE Function Dump Data
+   scanner/sap/sap_soap_rfc_rzl_read_dir                                           normal  SAP SOAP RFC RZL_READ_DIR_LOCAL Directory Contents Listing
+   scanner/sap/sap_soap_rfc_susr_rfc_user_interface                                normal  SAP /sap/bc/soap/rfc SOAP Service SUSR_RFC_USER_INTERFACE Function User Creation
+   scanner/sap/sap_soap_rfc_sxpg_call_system_exec                                  normal  SAP /sap/bc/soap/rfc SOAP Service SXPG_CALL_SYSTEM Function Command Execution
+   scanner/sap/sap_soap_rfc_sxpg_command_exec                                      normal  SAP SOAP RFC SXPG_COMMAND_EXECUTE
+   scanner/sap/sap_soap_rfc_system_info                                            normal  SAP /sap/bc/soap/rfc SOAP Service RFC_SYSTEM_INFO Function Sensitive Information Gathering
+   scanner/sap/sap_soap_th_saprel_disclosure                                       normal  SAP /sap/bc/soap/rfc SOAP Service TH_SAPREL Function Information Disclosure
+   scanner/sap/sap_web_gui_brute_login                                             normal  SAP Web GUI Login Brute Forcer
+   scanner/scada/digi_addp_reboot                                                  normal  Digi ADDP Remote Reboot Initiator
+   scanner/scada/digi_addp_version                                                 normal  Digi ADDP Information Discovery
+   scanner/scada/digi_realport_serialport_scan                                     normal  Digi RealPort Serial Server Port Scanner
+   scanner/scada/digi_realport_version                                             normal  Digi RealPort Serial Server Version
+   scanner/scada/indusoft_ntwebserver_fileaccess                                   normal  Indusoft WebStudio NTWebServer Remote File Access
+   scanner/scada/koyo_login                                       2012-01-19       normal  Koyo DirectLogic PLC Password Brute Force Utility
+   scanner/scada/modbus_findunitid                                2012-10-28       normal  Modbus Unit ID and Station ID Enumerator
+   scanner/scada/modbusclient                                                      normal  Modbus Client Utility
+   scanner/scada/modbusdetect                                     2011-11-01       normal  Modbus Version Scanner
+   scanner/scada/sielco_winlog_fileaccess                                          normal  Sielco Sistemi Winlog Remote File Access
+   scanner/sip/enumerator                                                          normal  SIP Username Enumerator (UDP)
+   scanner/sip/enumerator_tcp                                                      normal  SIP Username Enumerator (TCP)
+   scanner/sip/options                                                             normal  SIP Endpoint Scanner (UDP)
+   scanner/sip/options_tcp                                                         normal  SIP Endpoint Scanner (TCP)
+   scanner/sip/sipdroid_ext_enum                                                   normal  SIPDroid Extension Grabber
+   scanner/smb/smb2                                                                normal  SMB 2.0 Protocol Detection
+   scanner/smtp/smtp_enum                                                          normal  SMTP User Enumeration Utility
+   scanner/smtp/smtp_ntlm_domain                                                   normal  SMTP NTLM Domain Extraction
+   scanner/smtp/smtp_relay                                                         normal  SMTP Open Relay Detection
+   scanner/smtp/smtp_version                                                       normal  SMTP Banner Grabber
+   scanner/snmp/aix_version                                                        normal  AIX SNMP Scanner Auxiliary Module
+   scanner/snmp/arris_dg950                                                        normal  Arris DG950A Cable Modem Wifi Enumeration
+   scanner/snmp/brocade_enumhash                                                   normal  Brocade Password Hash Enumeration
+   scanner/snmp/cisco_config_tftp                                                  normal  Cisco IOS SNMP Configuration Grabber (TFTP)
+   scanner/snmp/cisco_upload_file                                                  normal  Cisco IOS SNMP File Upload (TFTP)
+   scanner/snmp/netopia_enum                                                       normal  Netopia 3347 Cable Modem Wifi Enumeration
+   scanner/snmp/sbg6580_enum                                                       normal  ARRIS / Motorola SBG6580 Cable Modem SNMP Enumeration Module
+   scanner/snmp/snmp_enum                                                          normal  SNMP Enumeration Module
+   scanner/snmp/snmp_enum_hp_laserjet                                              normal  HP LaserJet Printer SNMP Enumeration
+   scanner/snmp/snmp_enumshares                                                    normal  SNMP Windows SMB Share Enumeration
+   scanner/snmp/snmp_enumusers                                                     normal  SNMP Windows Username Enumeration
+   scanner/snmp/snmp_set                                                           normal  SNMP Set Module
+   scanner/snmp/ubee_ddw3611                                                       normal  Ubee DDW3611b Cable Modem Wifi Enumeration
+   scanner/snmp/xerox_workcentre_enumusers                                         normal  Xerox WorkCentre User Enumeration (SNMP)
+   scanner/ssh/cerberus_sftp_enumusers                            2014-05-27       normal  Cerberus FTP Server SFTP Username Enumeration
+   scanner/ssh/detect_kippo                                                        normal  Kippo SSH Honeypot Detector
+   scanner/ssh/ssh_enumusers                                                       normal  SSH Username Enumeration
+   scanner/ssh/ssh_identify_pubkeys                                                normal  SSH Public Key Acceptance Scanner
+   scanner/ssh/ssh_version                                                         normal  SSH Version Scanner
+   scanner/ssl/openssl_ccs                                        2014-06-05       normal  OpenSSL Server-Side ChangeCipherSpec Injection Scanner
+   scanner/ssl/openssl_heartbleed                                 2014-04-07       normal  OpenSSL Heartbeat (Heartbleed) Information Leak
+   scanner/telephony/wardial                                                       normal  Wardialer
+   scanner/telnet/lantronix_telnet_password                                        normal  Lantronix Telnet Password Recovery
+   scanner/telnet/lantronix_telnet_version                                         normal  Lantronix Telnet Service Banner Detection
+   scanner/telnet/telnet_encrypt_overflow                                          normal  Telnet Service Encyption Key ID Overflow Detection
+   scanner/telnet/telnet_ruggedcom                                                 normal  RuggedCom Telnet Password Generator
+   scanner/telnet/telnet_version                                                   normal  Telnet Service Banner Detection
+   scanner/tftp/ipswitch_whatsupgold_tftp                         2011-12-12       normal  IpSwitch WhatsUp Gold TFTP Directory Traversal
+   scanner/tftp/netdecision_tftp                                  2009-05-16       normal  NetDecision 4.2 TFTP Directory Traversal
+   scanner/tftp/tftpbrute                                                          normal  TFTP Brute Forcer
+   scanner/udp_scanner_template                                   2014-03-15       normal  UDP Scanner Example
+   scanner/upnp/ssdp_amp                                                           normal  SSDP ssdp:all M-SEARCH Amplification Scanner
+   scanner/upnp/ssdp_msearch                                                       normal  UPnP SSDP M-SEARCH Information Discovery
+   scanner/vmware/esx_fingerprint                                                  normal  VMWare ESX/ESXi Fingerprint Scanner
+   scanner/vmware/vmauthd_version                                                  normal  VMWare Authentication Daemon Version Scanner
+   scanner/vmware/vmware_enum_permissions                                          normal  VMWare Enumerate Permissions
+   scanner/vmware/vmware_enum_sessions                                             normal  VMWare Enumerate Active Sessions
+   scanner/vmware/vmware_enum_users                                                normal  VMWare Enumerate User Accounts
+   scanner/vmware/vmware_enum_vms                                                  normal  VMWare Enumerate Virtual Machines
+   scanner/vmware/vmware_host_details                                              normal  VMWare Enumerate Host Details
+   scanner/vmware/vmware_http_login                                                normal  VMWare Web Login Scanner
+   scanner/vmware/vmware_screenshot_stealer                                        normal  VMWare Screenshot Stealer
+   scanner/vnc/vnc_none_auth                                                       normal  VNC Authentication None Detection
+   scanner/voice/recorder                                                          normal  Telephone Line Voice Scanner
+   scanner/vxworks/wdbrpc_bootline                                                 normal  VxWorks WDB Agent Boot Parameter Scanner
+   scanner/vxworks/wdbrpc_version                                                  normal  VxWorks WDB Agent Version Scanner
+   scanner/winrm/winrm_auth_methods                                                normal  WinRM Authentication Method Detection
+   scanner/winrm/winrm_cmd                                                         normal  WinRM Command Runner
+   scanner/winrm/winrm_wql                                                         normal  WinRM WQL Query Runner
+   scanner/x11/open_x11                                                            normal  X11 No-Auth Scanner
+   server/browser_autopwn                                                          normal  HTTP Client Automatic Exploiter
+   server/capture/drda                                                             normal  Authentication Capture: DRDA (DB2, Informix, Derby)
+   server/capture/ftp                                                              normal  Authentication Capture: FTP
+   server/capture/http                                                             normal  Authentication Capture: HTTP
+   server/capture/http_basic                                                       normal  HTTP Client Basic Authentication Credential Collector
+   server/capture/http_javascript_keylogger                                        normal  Capture: HTTP JavaScript Keylogger
+   server/capture/http_ntlm                                                        normal  HTTP Client MS Credential Catcher
+   server/capture/imap                                                             normal  Authentication Capture: IMAP
+   server/capture/mysql                                                            normal  Authentication Capture: MySQL
+   server/capture/pop3                                                             normal  Authentication Capture: POP3
+   server/capture/postgresql                                                       normal  Authentication Capture: PostgreSQL
+   server/capture/printjob_capture                                                 normal  Printjob Capture Service
+   server/capture/sip                                                              normal  Authentication Capture: SIP
+   server/capture/smtp                                                             normal  Authentication Capture: SMTP
+   server/capture/telnet                                                           normal  Authentication Capture: Telnet
+   server/capture/vnc                                                              normal  Authentication Capture: VNC
+   server/dhclient_bash_env                                       2014-09-24       normal  DHCP Client Bash Environment Variable Code Injection
+   server/dhcp                                                                     normal  DHCP Server
+   server/dns/spoofhelper                                                          normal  DNS Spoofing Helper Service
+   server/fakedns                                                                  normal  Fake DNS Service
+   server/ftp                                                                      normal  FTP File Server
+   server/http_ntlmrelay                                                           normal  HTTP Client MS Credential Relayer
+   server/icmp_exfil                                                               normal  ICMP Exfiltration Service
+   server/openssl_heartbeat_client_memory                         2014-04-07       normal  OpenSSL Heartbeat (Heartbleed) Client Memory Exposure
+   server/pxexploit                                                                normal  PXE Boot Exploit Server
+   server/socks4a                                                                  normal  Socks4a Proxy Server
+   server/socks_unc                                                                normal  SOCKS Proxy UNC Path Redirection
+   server/tftp                                                                     normal  TFTP File Server
+   server/tnftp_savefile                                          2014-10-28       normal  tnftp "savefile" Arbitrary Command Execution
+   server/webkit_xslt_dropper                                                      normal  Cross Platform Webkit File Dropper
+   server/wget_symlink_file_write                                 2014-10-27       normal  GNU Wget FTP Symlink Arbitrary Filesystem Access
+   server/wpad                                                                     normal  WPAD.dat File Server
+   sniffer/psnuffle                                                                normal  pSnuffle Packet Sniffer
+   spoof/arp/arp_poisoning                                        1999-12-22       normal  ARP Spoof
+   spoof/cisco/cdp                                                                 normal  Send Cisco Discovery Protocol (CDP) Packets
+   spoof/cisco/dtp                                                                 normal  Forge Cisco DTP Packets
+   spoof/dns/bailiwicked_domain                                   2008-07-21       normal  DNS BailiWicked Domain Attack
+   spoof/dns/bailiwicked_host                                     2008-07-21       normal  DNS BailiWicked Host Attack
+   spoof/dns/compare_results                                      2008-07-21       normal  DNS Lookup Result Comparison
+   spoof/llmnr/llmnr_response                                                      normal  LLMNR Spoofer
+   spoof/nbns/nbns_response                                                        normal  NetBIOS Name Service Spoofer
+   spoof/replay/pcap_replay                                                        normal  Pcap Replay Utility
+   sqli/oracle/dbms_cdc_ipublish                                  2008-10-22       normal  Oracle DB SQL Injection via SYS.DBMS_CDC_IPUBLISH.ALTER_HOTLOG_INTERNAL_CSOURCE
+   sqli/oracle/dbms_cdc_publish                                   2008-10-22       normal  Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.ALTER_AUTOLOG_CHANGE_SOURCE
+   sqli/oracle/dbms_cdc_publish2                                  2010-04-26       normal  Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.DROP_CHANGE_SOURCE
+   sqli/oracle/dbms_cdc_publish3                                  2010-10-13       normal  Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.CREATE_CHANGE_SET
+   sqli/oracle/dbms_cdc_subscribe_activate_subscription           2005-04-18       normal  Oracle DB SQL Injection via SYS.DBMS_CDC_SUBSCRIBE.ACTIVATE_SUBSCRIPTION
+   sqli/oracle/dbms_export_extension                              2006-04-26       normal  Oracle DB SQL Injection via DBMS_EXPORT_EXTENSION
+   sqli/oracle/dbms_metadata_get_granted_xml                      2008-01-05       normal  Oracle DB SQL Injection via SYS.DBMS_METADATA.GET_GRANTED_XML
+   sqli/oracle/dbms_metadata_get_xml                              2008-01-05       normal  Oracle DB SQL Injection via SYS.DBMS_METADATA.GET_XML
+   sqli/oracle/dbms_metadata_open                                 2008-01-05       normal  Oracle DB SQL Injection via SYS.DBMS_METADATA.OPEN
+   sqli/oracle/droptable_trigger                                  2009-01-13       normal  Oracle DB SQL Injection in MDSYS.SDO_TOPO_DROP_FTBL Trigger
+   sqli/oracle/jvm_os_code_10g                                    2010-02-01       normal  Oracle DB 10gR2, 11gR1/R2 DBMS_JVM_EXP_PERMS OS Command Execution
+   sqli/oracle/jvm_os_code_11g                                    2010-02-01       normal  Oracle DB 11g R1/R2 DBMS_JVM_EXP_PERMS OS Code Execution
+   sqli/oracle/lt_compressworkspace                               2008-10-13       normal  Oracle DB SQL Injection via SYS.LT.COMPRESSWORKSPACE
+   sqli/oracle/lt_findricset_cursor                               2007-10-17       normal  Oracle DB SQL Injection via SYS.LT.FINDRICSET Evil Cursor Method
+   sqli/oracle/lt_mergeworkspace                                  2008-10-22       normal  Oracle DB SQL Injection via SYS.LT.MERGEWORKSPACE
+   sqli/oracle/lt_removeworkspace                                 2008-10-13       normal  Oracle DB SQL Injection via SYS.LT.REMOVEWORKSPACE
+   sqli/oracle/lt_rollbackworkspace                               2009-05-04       normal  Oracle DB SQL Injection via SYS.LT.ROLLBACKWORKSPACE
+   voip/asterisk_login                                                             normal  Asterisk Manager Login Utility
+   voip/cisco_cucdm_call_forward                                                   normal  Viproy CUCDM IP Phone XML Services - Call Forwarding Tool
+   voip/cisco_cucdm_speed_dials                                                    normal  Viproy CUCDM IP Phone XML Services - Speed Dial Attack Tool
+   voip/sip_deregister                                                             normal  SIP Deregister Extension
+   voip/sip_invite_spoof                                                           normal  SIP Invite Spoof
+   vsploit/malware/dns/dns_mariposa                                                normal  VSploit Mariposa DNS Query Module
+   vsploit/malware/dns/dns_query                                                   normal  VSploit DNS Beaconing Emulation
+   vsploit/malware/dns/dns_zeus                                                    normal  VSploit Zeus DNS Query Module
+   vsploit/pii/email_pii                                                           normal  VSploit Email PII
+   vsploit/pii/web_pii                                                             normal  VSploit Web PII

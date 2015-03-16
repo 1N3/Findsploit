@@ -1,0 +1,45 @@
+#!/bin/bash
+# copysploit by 1N3
+# A small script to automatically find and copy an exploit file to the current directory...
+#
+
+EDITOR='gedit' # PREFERED TEXT EDITOR
+COLOR1='\033[1m\033[91m'
+COLOR2='\033[1m\033[92m'
+COLOR3='\033[1m'
+
+if [ -z "$1" ]; 
+then
+	echo -e "$COLOR3   ___ _           _           _       _ _   "
+	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
+	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
+	echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
+	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
+	echo -e "$COLOR3                        |_|                  "
+	echo ""
+	echo -e "$COLOR1+ -- --=[copysploit by 1N3"
+	echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$COLOR1+ -- --=[Usage: copysploit <filename>"
+	echo ""
+	echo ""
+	exit;
+else
+	echo -e "$COLOR3   ___ _           _           _       _ _   "
+	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
+	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
+	echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
+	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
+	echo -e "$COLOR3                        |_|                  "
+	echo ""
+	echo -e "$COLOR1+ -- --=[findsploit by 1N3"
+        echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo ""
+	echo -e "$COLOR1+ -- --=[COPYING:$COLOR2 $1 $COLOR1 TO $COLOR2 `pwd` $RESET"
+	echo ""
+	find /pentest/exploits/ -name $1 -exec cp -f {} . \;
+	echo -e "$COLOR1"
+	ls -lahtr
+	$EDITOR $1 &
+fi
+exit
+
