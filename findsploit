@@ -31,7 +31,7 @@ VAR2=$2;
 VAR3=$3;
 VARS="$1 $2 $3";
 COLOR1='\033[91m'
-COLOR2='\033[92m'
+COLOR2='\033[1m\033[92m'
 COLOR3='\033[1m'
 RESET='\e[0m'
 
@@ -61,7 +61,7 @@ else
 	echo -e "$COLOR1+ -- --=[findsploit by 1N3"
         echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
 	echo ""
-	echo -e "$COLOR1+ -- --=[SEARCHING:\033[1m$COLOR2 $VARS $RESET"
+	echo -e "$COLOR1+ -- --=[SEARCHING: $COLOR2 $VARS $RESET"
 	echo ""
 	echo -e "$COLOR1+ -- --=[NMAP SCRIPTS$RESET"
 	echo ""

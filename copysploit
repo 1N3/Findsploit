@@ -38,8 +38,8 @@ else
 	echo ""
 	find /pentest/exploits/ -name $1 -exec cp -f {} . \;
 	echo -e "$COLOR1"
-	ls -lahtr
-	$EDITOR $1 &
+	ls -lahtr $1
+	#$EDITOR $1 & #UNCOMMENT TO VIEW FILES IN TEXT EDITOR AFTER COPYING...
 fi
 exit
 
