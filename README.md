@@ -1,4 +1,4 @@
-Findsploit v1.1 by 1N3 @CrowdShield
+Findsploit v1.2 by 1N3 @CrowdShield
 https://crowdshield.com
 
 Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
@@ -12,7 +12,7 @@ This script uses the local exploit-db database for exploits. To install this dat
 
 This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
 
-For updates to this script, use git clone https://github.com/1N3/findsploit.git
+For updates to this script, use git clone https://github.com/1N3/Findsploit.git
 
 DISCLAIMER
 I take no responsibility for the use of this script for malicious purposes.
