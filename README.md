@@ -1,4 +1,4 @@
-Findsploit v1.2 by 1N3 @CrowdShield
+Findsploit v1.3 by 1N3 @CrowdShield
 https://crowdshield.com
 
 Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
