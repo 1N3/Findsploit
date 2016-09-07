@@ -1,18 +1,49 @@
-Findsploit v1.3 by 1N3 @CrowdShield
+#Findsploit v1.4 by 1N3 @CrowdShield
 https://crowdshield.com
 
-Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
-
-INSTALLATION
-  1. Extract files to a directory (ie. /pentest/findsploit)
-  2. Set the below params to match your browser and settings
-  3. To run, chmod +x findsploit and ./findsploit iis 5.0 to search
-
-This script uses the local exploit-db database for exploits. To install this database locally, use the update.sh script under the exploitdb folder first. You will also need to install nmaps script database locally in /usr/share/nmap/scripts/ for the script to work.
-
-This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
+### ABOUT
+Finsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
 
 For updates to this script, use git clone https://github.com/1N3/Findsploit.git
 
-DISCLAIMER
-I take no responsibility for the use of this script for malicious purposes.
+### INSTALLATION
+```
+./install.sh
+```
+
+### USAGE
+```
+root@kali:/# findsploit heartbleed
+
+   ___ _           _           _       _ _   
+  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ 
+ / _\ | | '_ \ / _` / __| '_ \| |/ _ \| | __|
+/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ 
+\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|
+                        |_|                  
+
++ -- --=[findsploit v1.4 by 1N3
++ -- --=[https://crowdshield.com
+
++ -- --=[SEARCHING:  heartbleed   
+
++ -- --=[NMAP SCRIPTS
+
+/usr/share/nmap/scripts/ssl-heartbleed.nse
+
++ -- --=[METASPLOIT EXPLOITS
+
+msf_search/auxiliary:   scanner/ssl/openssl_heartbleed                                 2014-04-07       normal  OpenSSL Heartbeat (Heartbleed) Information Leak
+msf_search/auxiliary:   server/openssl_heartbeat_client_memory                         2014-04-07       normal  OpenSSL Heartbeat (Heartbleed) Client Memory Exposure
+
++ -- --=[EXPLOITDB EXPLOITS
+
+ Description                                                                 Path
+--------------------------------------------------------------------------- -------------------------
+Heartbleed OpenSSL - Information Leak Exploit (1)                           /multiple/remote/32791.c
+Heartbleed OpenSSL - Information Leak Exploit (2) - DTLS Support            /multiple/remote/32998.c
+
++ -- --=[Press any key to search online or Ctrl+C to exit...
+```
+
+

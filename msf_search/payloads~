@@ -36,8 +36,6 @@
    bsdi/x86/shell_bind_tcp                                              normal  BSDi Command Shell, Bind TCP Inline
    bsdi/x86/shell_find_port                                             normal  BSDi Command Shell, Find Port Inline
    bsdi/x86/shell_reverse_tcp                                           normal  BSDi Command Shell, Reverse TCP Inline
-   cmd/mainframe/generic_jcl                                            normal  Generic JCL Test for Mainframe Exploits
-   cmd/mainframe/reverse_shell_jcl                                      normal  Z/OS (MVS) Command Shell, Reverse TCP
    cmd/unix/bind_awk                                                    normal  Unix Command Shell, Bind TCP (via AWK)
    cmd/unix/bind_inetd                                                  normal  Unix Command Shell, Bind TCP (inetd)
    cmd/unix/bind_lua                                                    normal  Unix Command Shell, Bind TCP (via Lua)
@@ -101,23 +99,18 @@
    java/shell/bind_tcp                                                  normal  Command Shell, Java Bind TCP Stager
    java/shell/reverse_tcp                                               normal  Command Shell, Java Reverse TCP Stager
    java/shell_reverse_tcp                                               normal  Java Command Shell, Reverse TCP Inline
-   linux/armbe/shell_bind_tcp                                           normal  Linux ARM Big Endian Command Shell, Bind TCP Inline
    linux/armle/adduser                                                  normal  Linux Add User
    linux/armle/exec                                                     normal  Linux Execute Command
-   linux/armle/mettle/bind_tcp                                          normal  Linux Meterpreter, Bind TCP Stager
-   linux/armle/mettle/reverse_tcp                                       normal  Linux Meterpreter, Reverse TCP Stager
    linux/armle/shell/bind_tcp                                           normal  Linux dup2 Command Shell, Bind TCP Stager
    linux/armle/shell/reverse_tcp                                        normal  Linux dup2 Command Shell, Reverse TCP Stager
    linux/armle/shell_bind_tcp                                           normal  Linux Command Shell, Reverse TCP Inline
    linux/armle/shell_reverse_tcp                                        normal  Linux Command Shell, Reverse TCP Inline
    linux/mipsbe/exec                                                    normal  Linux Execute Command
-   linux/mipsbe/mettle/reverse_tcp                                      normal  Linux Meterpreter, Reverse TCP Stager
    linux/mipsbe/reboot                                                  normal  Linux Reboot
    linux/mipsbe/shell/reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Stager
    linux/mipsbe/shell_bind_tcp                                          normal  Linux Command Shell, Bind TCP Inline
    linux/mipsbe/shell_reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Inline
    linux/mipsle/exec                                                    normal  Linux Execute Command
-   linux/mipsle/mettle/reverse_tcp                                      normal  Linux Meterpreter, Reverse TCP Stager
    linux/mipsle/reboot                                                  normal  Linux Reboot
    linux/mipsle/shell/reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Stager
    linux/mipsle/shell_bind_tcp                                          normal  Linux Command Shell, Bind TCP Inline
@@ -129,8 +122,6 @@
    linux/ppc64/shell_find_port                                          normal  Linux Command Shell, Find Port Inline
    linux/ppc64/shell_reverse_tcp                                        normal  Linux Command Shell, Reverse TCP Inline
    linux/x64/exec                                                       normal  Linux Execute Command
-   linux/x64/mettle/bind_tcp                                            normal  Linux Mettle x64, Bind TCP Stager
-   linux/x64/mettle/reverse_tcp                                         normal  Linux Mettle x64, Reverse TCP Stager
    linux/x64/shell/bind_tcp                                             normal  Linux Command Shell, Bind TCP Stager
    linux/x64/shell/reverse_tcp                                          normal  Linux Command Shell, Reverse TCP Stager
    linux/x64/shell_bind_tcp                                             normal  Linux Command Shell, Bind TCP Inline
@@ -152,16 +143,6 @@
    linux/x86/meterpreter/reverse_tcp_uuid                               normal  Linux Meterpreter, Reverse TCP Stager
    linux/x86/metsvc_bind_tcp                                            normal  Linux Meterpreter Service, Bind TCP
    linux/x86/metsvc_reverse_tcp                                         normal  Linux Meterpreter Service, Reverse TCP Inline
-   linux/x86/mettle/bind_ipv6_tcp                                       normal  Linux Mettle x86, Bind IPv6 TCP Stager (Linux x86)
-   linux/x86/mettle/bind_ipv6_tcp_uuid                                  normal  Linux Mettle x86, Bind IPv6 TCP Stager with UUID Support (Linux x86)
-   linux/x86/mettle/bind_nonx_tcp                                       normal  Linux Mettle x86, Bind TCP Stager
-   linux/x86/mettle/bind_tcp                                            normal  Linux Mettle x86, Bind TCP Stager (Linux x86)
-   linux/x86/mettle/bind_tcp_uuid                                       normal  Linux Mettle x86, Bind TCP Stager with UUID Support (Linux x86)
-   linux/x86/mettle/find_tag                                            normal  Linux Mettle x86, Find Tag Stager
-   linux/x86/mettle/reverse_ipv6_tcp                                    normal  Linux Mettle x86, Reverse TCP Stager (IPv6)
-   linux/x86/mettle/reverse_nonx_tcp                                    normal  Linux Mettle x86, Reverse TCP Stager
-   linux/x86/mettle/reverse_tcp                                         normal  Linux Mettle x86, Reverse TCP Stager
-   linux/x86/mettle/reverse_tcp_uuid                                    normal  Linux Mettle x86, Reverse TCP Stager
    linux/x86/read_file                                                  normal  Linux Read File
    linux/x86/shell/bind_ipv6_tcp                                        normal  Linux Command Shell, Bind IPv6 TCP Stager (Linux x86)
    linux/x86/shell/bind_ipv6_tcp_uuid                                   normal  Linux Command Shell, Bind IPv6 TCP Stager with UUID Support (Linux x86)
@@ -179,6 +160,7 @@
    linux/x86/shell_find_port                                            normal  Linux Command Shell, Find Port Inline
    linux/x86/shell_find_tag                                             normal  Linux Command Shell, Find Tag Inline
    linux/x86/shell_reverse_tcp                                          normal  Linux Command Shell, Reverse TCP Inline
+   linux/x86/shell_reverse_tcp2                                         normal  Linux Command Shell, Reverse TCP Inline - Metasm Demo
    mainframe/shell_reverse_tcp                                          normal  Z/OS (MVS) Command Shell, Reverse TCP Inline
    netware/shell/reverse_tcp                                            normal  NetWare Command Shell, Reverse TCP Stager
    nodejs/shell_bind_tcp                                                normal  Command Shell, Bind TCP (via nodejs)
@@ -261,7 +243,7 @@
    windows/dllinject/bind_ipv6_tcp_uuid                                 normal  Reflective DLL Injection, Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/dllinject/bind_nonx_tcp                                      normal  Reflective DLL Injection, Bind TCP Stager (No NX or Win7)
    windows/dllinject/bind_tcp                                           normal  Reflective DLL Injection, Bind TCP Stager (Windows x86)
-   windows/dllinject/bind_tcp_rc4                                       normal  Reflective DLL Injection, Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/dllinject/bind_tcp_rc4                                       normal  Reflective DLL Injection, Bind TCP Stager (RC4 Stage Encryption)
    windows/dllinject/bind_tcp_uuid                                      normal  Reflective DLL Injection, Bind TCP Stager with UUID Support (Windows x86)
    windows/dllinject/find_tag                                           normal  Reflective DLL Injection, Find Tag Ordinal Stager
    windows/dllinject/reverse_hop_http                                   normal  Reflective DLL Injection, Reverse Hop HTTP/HTTPS Stager
@@ -273,8 +255,8 @@
    windows/dllinject/reverse_tcp                                        normal  Reflective DLL Injection, Reverse TCP Stager
    windows/dllinject/reverse_tcp_allports                               normal  Reflective DLL Injection, Reverse All-Port TCP Stager
    windows/dllinject/reverse_tcp_dns                                    normal  Reflective DLL Injection, Reverse TCP Stager (DNS)
-   windows/dllinject/reverse_tcp_rc4                                    normal  Reflective DLL Injection, Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/dllinject/reverse_tcp_rc4_dns                                normal  Reflective DLL Injection, Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/dllinject/reverse_tcp_rc4                                    normal  Reflective DLL Injection, Reverse TCP Stager (RC4 Stage Encryption)
+   windows/dllinject/reverse_tcp_rc4_dns                                normal  Reflective DLL Injection, Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/dllinject/reverse_tcp_uuid                                   normal  Reflective DLL Injection, Reverse TCP Stager with UUID Support
    windows/dllinject/reverse_winhttp                                    normal  Reflective DLL Injection, Windows Reverse HTTP Stager (winhttp)
    windows/dns_txt_query_exec                                           normal  DNS TXT Record Payload Download and Execution
@@ -289,7 +271,7 @@
    windows/meterpreter/bind_ipv6_tcp_uuid                               normal  Windows Meterpreter (Reflective Injection), Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/meterpreter/bind_nonx_tcp                                    normal  Windows Meterpreter (Reflective Injection), Bind TCP Stager (No NX or Win7)
    windows/meterpreter/bind_tcp                                         normal  Windows Meterpreter (Reflective Injection), Bind TCP Stager (Windows x86)
-   windows/meterpreter/bind_tcp_rc4                                     normal  Windows Meterpreter (Reflective Injection), Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/meterpreter/bind_tcp_rc4                                     normal  Windows Meterpreter (Reflective Injection), Bind TCP Stager (RC4 Stage Encryption)
    windows/meterpreter/bind_tcp_uuid                                    normal  Windows Meterpreter (Reflective Injection), Bind TCP Stager with UUID Support (Windows x86)
    windows/meterpreter/find_tag                                         normal  Windows Meterpreter (Reflective Injection), Find Tag Ordinal Stager
    windows/meterpreter/reverse_hop_http                                 normal  Windows Meterpreter (Reflective Injection), Reverse Hop HTTP/HTTPS Stager
@@ -303,8 +285,8 @@
    windows/meterpreter/reverse_tcp                                      normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager
    windows/meterpreter/reverse_tcp_allports                             normal  Windows Meterpreter (Reflective Injection), Reverse All-Port TCP Stager
    windows/meterpreter/reverse_tcp_dns                                  normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager (DNS)
-   windows/meterpreter/reverse_tcp_rc4                                  normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/meterpreter/reverse_tcp_rc4_dns                              normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/meterpreter/reverse_tcp_rc4                                  normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption)
+   windows/meterpreter/reverse_tcp_rc4_dns                              normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/meterpreter/reverse_tcp_uuid                                 normal  Windows Meterpreter (Reflective Injection), Reverse TCP Stager with UUID Support
    windows/meterpreter/reverse_winhttp                                  normal  Windows Meterpreter (Reflective Injection), Windows Reverse HTTP Stager (winhttp)
    windows/meterpreter/reverse_winhttps                                 normal  Windows Meterpreter (Reflective Injection), Windows Reverse HTTPS Stager (winhttp)
@@ -321,7 +303,7 @@
    windows/patchupdllinject/bind_ipv6_tcp_uuid                          normal  Windows Inject DLL, Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/patchupdllinject/bind_nonx_tcp                               normal  Windows Inject DLL, Bind TCP Stager (No NX or Win7)
    windows/patchupdllinject/bind_tcp                                    normal  Windows Inject DLL, Bind TCP Stager (Windows x86)
-   windows/patchupdllinject/bind_tcp_rc4                                normal  Windows Inject DLL, Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/patchupdllinject/bind_tcp_rc4                                normal  Windows Inject DLL, Bind TCP Stager (RC4 Stage Encryption)
    windows/patchupdllinject/bind_tcp_uuid                               normal  Windows Inject DLL, Bind TCP Stager with UUID Support (Windows x86)
    windows/patchupdllinject/find_tag                                    normal  Windows Inject DLL, Find Tag Ordinal Stager
    windows/patchupdllinject/reverse_ipv6_tcp                            normal  Windows Inject DLL, Reverse TCP Stager (IPv6)
@@ -330,8 +312,8 @@
    windows/patchupdllinject/reverse_tcp                                 normal  Windows Inject DLL, Reverse TCP Stager
    windows/patchupdllinject/reverse_tcp_allports                        normal  Windows Inject DLL, Reverse All-Port TCP Stager
    windows/patchupdllinject/reverse_tcp_dns                             normal  Windows Inject DLL, Reverse TCP Stager (DNS)
-   windows/patchupdllinject/reverse_tcp_rc4                             normal  Windows Inject DLL, Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/patchupdllinject/reverse_tcp_rc4_dns                         normal  Windows Inject DLL, Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/patchupdllinject/reverse_tcp_rc4                             normal  Windows Inject DLL, Reverse TCP Stager (RC4 Stage Encryption)
+   windows/patchupdllinject/reverse_tcp_rc4_dns                         normal  Windows Inject DLL, Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/patchupdllinject/reverse_tcp_uuid                            normal  Windows Inject DLL, Reverse TCP Stager with UUID Support
    windows/patchupmeterpreter/bind_hidden_ipknock_tcp                   normal  Windows Meterpreter (skape/jt Injection), Hidden Bind Ipknock TCP Stager
    windows/patchupmeterpreter/bind_hidden_tcp                           normal  Windows Meterpreter (skape/jt Injection), Hidden Bind TCP Stager
@@ -339,7 +321,7 @@
    windows/patchupmeterpreter/bind_ipv6_tcp_uuid                        normal  Windows Meterpreter (skape/jt Injection), Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/patchupmeterpreter/bind_nonx_tcp                             normal  Windows Meterpreter (skape/jt Injection), Bind TCP Stager (No NX or Win7)
    windows/patchupmeterpreter/bind_tcp                                  normal  Windows Meterpreter (skape/jt Injection), Bind TCP Stager (Windows x86)
-   windows/patchupmeterpreter/bind_tcp_rc4                              normal  Windows Meterpreter (skape/jt Injection), Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/patchupmeterpreter/bind_tcp_rc4                              normal  Windows Meterpreter (skape/jt Injection), Bind TCP Stager (RC4 Stage Encryption)
    windows/patchupmeterpreter/bind_tcp_uuid                             normal  Windows Meterpreter (skape/jt Injection), Bind TCP Stager with UUID Support (Windows x86)
    windows/patchupmeterpreter/find_tag                                  normal  Windows Meterpreter (skape/jt Injection), Find Tag Ordinal Stager
    windows/patchupmeterpreter/reverse_ipv6_tcp                          normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (IPv6)
@@ -348,8 +330,8 @@
    windows/patchupmeterpreter/reverse_tcp                               normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager
    windows/patchupmeterpreter/reverse_tcp_allports                      normal  Windows Meterpreter (skape/jt Injection), Reverse All-Port TCP Stager
    windows/patchupmeterpreter/reverse_tcp_dns                           normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (DNS)
-   windows/patchupmeterpreter/reverse_tcp_rc4                           normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/patchupmeterpreter/reverse_tcp_rc4_dns                       normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/patchupmeterpreter/reverse_tcp_rc4                           normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (RC4 Stage Encryption)
+   windows/patchupmeterpreter/reverse_tcp_rc4_dns                       normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/patchupmeterpreter/reverse_tcp_uuid                          normal  Windows Meterpreter (skape/jt Injection), Reverse TCP Stager with UUID Support
    windows/powershell_bind_tcp                                          normal  Windows Interactive Powershell Session, Bind TCP
    windows/powershell_reverse_tcp                                       normal  Windows Interactive Powershell Session, Reverse TCP
@@ -359,7 +341,7 @@
    windows/shell/bind_ipv6_tcp_uuid                                     normal  Windows Command Shell, Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/shell/bind_nonx_tcp                                          normal  Windows Command Shell, Bind TCP Stager (No NX or Win7)
    windows/shell/bind_tcp                                               normal  Windows Command Shell, Bind TCP Stager (Windows x86)
-   windows/shell/bind_tcp_rc4                                           normal  Windows Command Shell, Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/shell/bind_tcp_rc4                                           normal  Windows Command Shell, Bind TCP Stager (RC4 Stage Encryption)
    windows/shell/bind_tcp_uuid                                          normal  Windows Command Shell, Bind TCP Stager with UUID Support (Windows x86)
    windows/shell/find_tag                                               normal  Windows Command Shell, Find Tag Ordinal Stager
    windows/shell/reverse_ipv6_tcp                                       normal  Windows Command Shell, Reverse TCP Stager (IPv6)
@@ -368,8 +350,8 @@
    windows/shell/reverse_tcp                                            normal  Windows Command Shell, Reverse TCP Stager
    windows/shell/reverse_tcp_allports                                   normal  Windows Command Shell, Reverse All-Port TCP Stager
    windows/shell/reverse_tcp_dns                                        normal  Windows Command Shell, Reverse TCP Stager (DNS)
-   windows/shell/reverse_tcp_rc4                                        normal  Windows Command Shell, Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/shell/reverse_tcp_rc4_dns                                    normal  Windows Command Shell, Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/shell/reverse_tcp_rc4                                        normal  Windows Command Shell, Reverse TCP Stager (RC4 Stage Encryption)
+   windows/shell/reverse_tcp_rc4_dns                                    normal  Windows Command Shell, Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/shell/reverse_tcp_uuid                                       normal  Windows Command Shell, Reverse TCP Stager with UUID Support
    windows/shell_bind_tcp                                               normal  Windows Command Shell, Bind TCP Inline
    windows/shell_bind_tcp_xpfw                                          normal  Windows Disable Windows ICF, Command Shell, Bind TCP Inline
@@ -382,7 +364,7 @@
    windows/upexec/bind_ipv6_tcp_uuid                                    normal  Windows Upload/Execute, Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/upexec/bind_nonx_tcp                                         normal  Windows Upload/Execute, Bind TCP Stager (No NX or Win7)
    windows/upexec/bind_tcp                                              normal  Windows Upload/Execute, Bind TCP Stager (Windows x86)
-   windows/upexec/bind_tcp_rc4                                          normal  Windows Upload/Execute, Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/upexec/bind_tcp_rc4                                          normal  Windows Upload/Execute, Bind TCP Stager (RC4 Stage Encryption)
    windows/upexec/bind_tcp_uuid                                         normal  Windows Upload/Execute, Bind TCP Stager with UUID Support (Windows x86)
    windows/upexec/find_tag                                              normal  Windows Upload/Execute, Find Tag Ordinal Stager
    windows/upexec/reverse_ipv6_tcp                                      normal  Windows Upload/Execute, Reverse TCP Stager (IPv6)
@@ -391,8 +373,8 @@
    windows/upexec/reverse_tcp                                           normal  Windows Upload/Execute, Reverse TCP Stager
    windows/upexec/reverse_tcp_allports                                  normal  Windows Upload/Execute, Reverse All-Port TCP Stager
    windows/upexec/reverse_tcp_dns                                       normal  Windows Upload/Execute, Reverse TCP Stager (DNS)
-   windows/upexec/reverse_tcp_rc4                                       normal  Windows Upload/Execute, Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/upexec/reverse_tcp_rc4_dns                                   normal  Windows Upload/Execute, Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/upexec/reverse_tcp_rc4                                       normal  Windows Upload/Execute, Reverse TCP Stager (RC4 Stage Encryption)
+   windows/upexec/reverse_tcp_rc4_dns                                   normal  Windows Upload/Execute, Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/upexec/reverse_tcp_uuid                                      normal  Windows Upload/Execute, Reverse TCP Stager with UUID Support
    windows/vncinject/bind_hidden_ipknock_tcp                            normal  VNC Server (Reflective Injection), Hidden Bind Ipknock TCP Stager
    windows/vncinject/bind_hidden_tcp                                    normal  VNC Server (Reflective Injection), Hidden Bind TCP Stager
@@ -400,7 +382,7 @@
    windows/vncinject/bind_ipv6_tcp_uuid                                 normal  VNC Server (Reflective Injection), Bind IPv6 TCP Stager with UUID Support (Windows x86)
    windows/vncinject/bind_nonx_tcp                                      normal  VNC Server (Reflective Injection), Bind TCP Stager (No NX or Win7)
    windows/vncinject/bind_tcp                                           normal  VNC Server (Reflective Injection), Bind TCP Stager (Windows x86)
-   windows/vncinject/bind_tcp_rc4                                       normal  VNC Server (Reflective Injection), Bind TCP Stager (RC4 Stage Encryption, Metasm)
+   windows/vncinject/bind_tcp_rc4                                       normal  VNC Server (Reflective Injection), Bind TCP Stager (RC4 Stage Encryption)
    windows/vncinject/bind_tcp_uuid                                      normal  VNC Server (Reflective Injection), Bind TCP Stager with UUID Support (Windows x86)
    windows/vncinject/find_tag                                           normal  VNC Server (Reflective Injection), Find Tag Ordinal Stager
    windows/vncinject/reverse_hop_http                                   normal  VNC Server (Reflective Injection), Reverse Hop HTTP/HTTPS Stager
@@ -412,8 +394,8 @@
    windows/vncinject/reverse_tcp                                        normal  VNC Server (Reflective Injection), Reverse TCP Stager
    windows/vncinject/reverse_tcp_allports                               normal  VNC Server (Reflective Injection), Reverse All-Port TCP Stager
    windows/vncinject/reverse_tcp_dns                                    normal  VNC Server (Reflective Injection), Reverse TCP Stager (DNS)
-   windows/vncinject/reverse_tcp_rc4                                    normal  VNC Server (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption, Metasm)
-   windows/vncinject/reverse_tcp_rc4_dns                                normal  VNC Server (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption DNS, Metasm)
+   windows/vncinject/reverse_tcp_rc4                                    normal  VNC Server (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption)
+   windows/vncinject/reverse_tcp_rc4_dns                                normal  VNC Server (Reflective Injection), Reverse TCP Stager (RC4 Stage Encryption DNS)
    windows/vncinject/reverse_tcp_uuid                                   normal  VNC Server (Reflective Injection), Reverse TCP Stager with UUID Support
    windows/vncinject/reverse_winhttp                                    normal  VNC Server (Reflective Injection), Windows Reverse HTTP Stager (winhttp)
    windows/x64/exec                                                     normal  Windows x64 Execute Command
