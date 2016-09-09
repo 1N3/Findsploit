@@ -34,8 +34,8 @@ rm -f /usr/bin/findsploit 2> /dev/null
 rm -f /usr/bin/copysploit 2> /dev/null
 rm -f /usr/bin/compilesploit 2> /dev/null
 ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
-ln -s /usr/share/findsploit/findsploit /usr/bin/copysploit
-ln -s /usr/share/findsploit/findsploit /usr/bin/compilesploit
+ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
+ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
 echo -e "$OKORANGE + -- --=[Done!$RESET"
 
 
