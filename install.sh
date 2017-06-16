@@ -22,6 +22,7 @@ echo -e "$COLOR1+ -- --=[Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 
 echo -e "$OKGREEN + -- --=[This script will install findsploit under $FINDSPLOIT_INSTALL_DIR."
+rm -Rf $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 mkdir -p $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 cp -Rf $PWD/* $FINDSPLOIT_INSTALL_DIR 
 cd $FINDSPLOIT_INSTALL_DIR

@@ -33,6 +33,7 @@
    x86/nonalpha                                   low        Non-Alpha Encoder
    x86/nonupper                                   low        Non-Upper Encoder
    x86/opt_sub                                    manual     Sub Encoder (optimised)
+   x86/service                                    manual     Register Service
    x86/shikata_ga_nai                             excellent  Polymorphic XOR Additive Feedback Encoder
    x86/single_static_bit                          manual     Single Static Bit
    x86/unicode_mixed                              manual     Alpha2 Alphanumeric Unicode Mixedcase Encoder

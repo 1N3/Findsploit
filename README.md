@@ -1,4 +1,4 @@
-#Findsploit v1.4 
+#Findsploit v1.5 
 by 1N3 @CrowdShield - https://crowdshield.com
 
 ### ABOUT
@@ -22,7 +22,7 @@ root@kali:/# findsploit heartbleed
 \/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|
                         |_|                  
 
-+ -- --=[findsploit v1.4 by 1N3
++ -- --=[findsploit v1.5 by 1N3
 + -- --=[https://crowdshield.com
 
 + -- --=[SEARCHING:  heartbleed   

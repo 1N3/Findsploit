@@ -2,12 +2,15 @@
    aix/ppc/shell_find_port                                              normal  AIX Command Shell, Find Port Inline
    aix/ppc/shell_interact                                               normal  AIX execve Shell for inetd
    aix/ppc/shell_reverse_tcp                                            normal  AIX Command Shell, Reverse TCP Inline
-   android/meterpreter/reverse_http                                     normal  Android Meterpreter, Dalvik Reverse HTTP Stager
-   android/meterpreter/reverse_https                                    normal  Android Meterpreter, Dalvik Reverse HTTPS Stager
-   android/meterpreter/reverse_tcp                                      normal  Android Meterpreter, Dalvik Reverse TCP Stager
-   android/shell/reverse_http                                           normal  Command Shell, Dalvik Reverse HTTP Stager
-   android/shell/reverse_https                                          normal  Command Shell, Dalvik Reverse HTTPS Stager
-   android/shell/reverse_tcp                                            normal  Command Shell, Dalvik Reverse TCP Stager
+   android/meterpreter/reverse_http                                     normal  Android Meterpreter, Android Reverse HTTP Stager
+   android/meterpreter/reverse_https                                    normal  Android Meterpreter, Android Reverse HTTPS Stager
+   android/meterpreter/reverse_tcp                                      normal  Android Meterpreter, Android Reverse TCP Stager
+   android/meterpreter_reverse_http                                     normal  Android Meterpreter Shell, Reverse HTTP Inline
+   android/meterpreter_reverse_https                                    normal  Android Meterpreter Shell, Reverse HTTPS Inline
+   android/meterpreter_reverse_tcp                                      normal  Android Meterpreter Shell, Reverse TCP Inline
+   android/shell/reverse_http                                           normal  Command Shell, Android Reverse HTTP Stager
+   android/shell/reverse_https                                          normal  Command Shell, Android Reverse HTTPS Stager
+   android/shell/reverse_tcp                                            normal  Command Shell, Android Reverse TCP Stager
    bsd/sparc/shell_bind_tcp                                             normal  BSD Command Shell, Bind TCP Inline
    bsd/sparc/shell_reverse_tcp                                          normal  BSD Command Shell, Reverse TCP Inline
    bsd/x64/exec                                                         normal  BSD x64 Execute Command
@@ -36,6 +39,7 @@
    bsdi/x86/shell_bind_tcp                                              normal  BSDi Command Shell, Bind TCP Inline
    bsdi/x86/shell_find_port                                             normal  BSDi Command Shell, Find Port Inline
    bsdi/x86/shell_reverse_tcp                                           normal  BSDi Command Shell, Reverse TCP Inline
+   cmd/mainframe/apf_privesc_jcl                                        normal  JCL to Escalate Privilages
    cmd/mainframe/generic_jcl                                            normal  Generic JCL Test for Mainframe Exploits
    cmd/mainframe/reverse_shell_jcl                                      normal  Z/OS (MVS) Command Shell, Reverse TCP
    cmd/unix/bind_awk                                                    normal  Unix Command Shell, Bind TCP (via AWK)
@@ -57,6 +61,7 @@
    cmd/unix/reverse_bash                                                normal  Unix Command Shell, Reverse TCP (/dev/tcp)
    cmd/unix/reverse_bash_telnet_ssl                                     normal  Unix Command Shell, Reverse TCP SSL (telnet)
    cmd/unix/reverse_lua                                                 normal  Unix Command Shell, Reverse TCP (via Lua)
+   cmd/unix/reverse_ncat_ssl                                            normal  Unix Command Shell, Reverse TCP (via ncat)
    cmd/unix/reverse_netcat                                              normal  Unix Command Shell, Reverse TCP (via netcat)
    cmd/unix/reverse_netcat_gaping                                       normal  Unix Command Shell, Reverse TCP (via netcat -e)
    cmd/unix/reverse_nodejs                                              normal  Unix Command Shell, Reverse TCP (via nodejs)
@@ -101,36 +106,63 @@
    java/shell/bind_tcp                                                  normal  Command Shell, Java Bind TCP Stager
    java/shell/reverse_tcp                                               normal  Command Shell, Java Reverse TCP Stager
    java/shell_reverse_tcp                                               normal  Java Command Shell, Reverse TCP Inline
+   linux/aarch64/meterpreter_reverse_http                               normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/aarch64/meterpreter_reverse_https                              normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/aarch64/meterpreter_reverse_tcp                                normal  Linux Meterpreter, Reverse TCP Inline
+   linux/armbe/meterpreter_reverse_http                                 normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/armbe/meterpreter_reverse_https                                normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/armbe/meterpreter_reverse_tcp                                  normal  Linux Meterpreter, Reverse TCP Inline
    linux/armbe/shell_bind_tcp                                           normal  Linux ARM Big Endian Command Shell, Bind TCP Inline
    linux/armle/adduser                                                  normal  Linux Add User
    linux/armle/exec                                                     normal  Linux Execute Command
-   linux/armle/mettle/bind_tcp                                          normal  Linux Meterpreter, Bind TCP Stager
-   linux/armle/mettle/reverse_tcp                                       normal  Linux Meterpreter, Reverse TCP Stager
+   linux/armle/meterpreter/bind_tcp                                     normal  Linux Meterpreter, Bind TCP Stager
+   linux/armle/meterpreter/reverse_tcp                                  normal  Linux Meterpreter, Reverse TCP Stager
+   linux/armle/meterpreter_reverse_http                                 normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/armle/meterpreter_reverse_https                                normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/armle/meterpreter_reverse_tcp                                  normal  Linux Meterpreter, Reverse TCP Inline
    linux/armle/shell/bind_tcp                                           normal  Linux dup2 Command Shell, Bind TCP Stager
    linux/armle/shell/reverse_tcp                                        normal  Linux dup2 Command Shell, Reverse TCP Stager
    linux/armle/shell_bind_tcp                                           normal  Linux Command Shell, Reverse TCP Inline
    linux/armle/shell_reverse_tcp                                        normal  Linux Command Shell, Reverse TCP Inline
+   linux/mips64/meterpreter_reverse_http                                normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/mips64/meterpreter_reverse_https                               normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/mips64/meterpreter_reverse_tcp                                 normal  Linux Meterpreter, Reverse TCP Inline
    linux/mipsbe/exec                                                    normal  Linux Execute Command
-   linux/mipsbe/mettle/reverse_tcp                                      normal  Linux Meterpreter, Reverse TCP Stager
+   linux/mipsbe/meterpreter/reverse_tcp                                 normal  Linux Meterpreter, Reverse TCP Stager
+   linux/mipsbe/meterpreter_reverse_http                                normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/mipsbe/meterpreter_reverse_https                               normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/mipsbe/meterpreter_reverse_tcp                                 normal  Linux Meterpreter, Reverse TCP Inline
    linux/mipsbe/reboot                                                  normal  Linux Reboot
    linux/mipsbe/shell/reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Stager
    linux/mipsbe/shell_bind_tcp                                          normal  Linux Command Shell, Bind TCP Inline
    linux/mipsbe/shell_reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Inline
    linux/mipsle/exec                                                    normal  Linux Execute Command
-   linux/mipsle/mettle/reverse_tcp                                      normal  Linux Meterpreter, Reverse TCP Stager
+   linux/mipsle/meterpreter/reverse_tcp                                 normal  Linux Meterpreter, Reverse TCP Stager
+   linux/mipsle/meterpreter_reverse_http                                normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/mipsle/meterpreter_reverse_https                               normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/mipsle/meterpreter_reverse_tcp                                 normal  Linux Meterpreter, Reverse TCP Inline
    linux/mipsle/reboot                                                  normal  Linux Reboot
    linux/mipsle/shell/reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Stager
    linux/mipsle/shell_bind_tcp                                          normal  Linux Command Shell, Bind TCP Inline
    linux/mipsle/shell_reverse_tcp                                       normal  Linux Command Shell, Reverse TCP Inline
+   linux/ppc/meterpreter_reverse_http                                   normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/ppc/meterpreter_reverse_https                                  normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/ppc/meterpreter_reverse_tcp                                    normal  Linux Meterpreter, Reverse TCP Inline
    linux/ppc/shell_bind_tcp                                             normal  Linux Command Shell, Bind TCP Inline
    linux/ppc/shell_find_port                                            normal  Linux Command Shell, Find Port Inline
    linux/ppc/shell_reverse_tcp                                          normal  Linux Command Shell, Reverse TCP Inline
    linux/ppc64/shell_bind_tcp                                           normal  Linux Command Shell, Bind TCP Inline
    linux/ppc64/shell_find_port                                          normal  Linux Command Shell, Find Port Inline
    linux/ppc64/shell_reverse_tcp                                        normal  Linux Command Shell, Reverse TCP Inline
+   linux/ppc64le/meterpreter_reverse_http                               normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/ppc64le/meterpreter_reverse_https                              normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/ppc64le/meterpreter_reverse_tcp                                normal  Linux Meterpreter, Reverse TCP Inline
    linux/x64/exec                                                       normal  Linux Execute Command
-   linux/x64/mettle/bind_tcp                                            normal  Linux Mettle x64, Bind TCP Stager
-   linux/x64/mettle/reverse_tcp                                         normal  Linux Mettle x64, Reverse TCP Stager
+   linux/x64/meterpreter/bind_tcp                                       normal  Linux Mettle x64, Bind TCP Stager
+   linux/x64/meterpreter/reverse_tcp                                    normal  Linux Mettle x64, Reverse TCP Stager
+   linux/x64/meterpreter_reverse_http                                   normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/x64/meterpreter_reverse_https                                  normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/x64/meterpreter_reverse_tcp                                    normal  Linux Meterpreter, Reverse TCP Inline
    linux/x64/shell/bind_tcp                                             normal  Linux Command Shell, Bind TCP Stager
    linux/x64/shell/reverse_tcp                                          normal  Linux Command Shell, Reverse TCP Stager
    linux/x64/shell_bind_tcp                                             normal  Linux Command Shell, Bind TCP Inline
@@ -140,28 +172,21 @@
    linux/x86/adduser                                                    normal  Linux Add User
    linux/x86/chmod                                                      normal  Linux Chmod
    linux/x86/exec                                                       normal  Linux Execute Command
-   linux/x86/meterpreter/bind_ipv6_tcp                                  normal  Linux Meterpreter, Bind IPv6 TCP Stager (Linux x86)
-   linux/x86/meterpreter/bind_ipv6_tcp_uuid                             normal  Linux Meterpreter, Bind IPv6 TCP Stager with UUID Support (Linux x86)
-   linux/x86/meterpreter/bind_nonx_tcp                                  normal  Linux Meterpreter, Bind TCP Stager
-   linux/x86/meterpreter/bind_tcp                                       normal  Linux Meterpreter, Bind TCP Stager (Linux x86)
-   linux/x86/meterpreter/bind_tcp_uuid                                  normal  Linux Meterpreter, Bind TCP Stager with UUID Support (Linux x86)
-   linux/x86/meterpreter/find_tag                                       normal  Linux Meterpreter, Find Tag Stager
-   linux/x86/meterpreter/reverse_ipv6_tcp                               normal  Linux Meterpreter, Reverse TCP Stager (IPv6)
-   linux/x86/meterpreter/reverse_nonx_tcp                               normal  Linux Meterpreter, Reverse TCP Stager
-   linux/x86/meterpreter/reverse_tcp                                    normal  Linux Meterpreter, Reverse TCP Stager
-   linux/x86/meterpreter/reverse_tcp_uuid                               normal  Linux Meterpreter, Reverse TCP Stager
+   linux/x86/meterpreter/bind_ipv6_tcp                                  normal  Linux Mettle x86, Bind IPv6 TCP Stager (Linux x86)
+   linux/x86/meterpreter/bind_ipv6_tcp_uuid                             normal  Linux Mettle x86, Bind IPv6 TCP Stager with UUID Support (Linux x86)
+   linux/x86/meterpreter/bind_nonx_tcp                                  normal  Linux Mettle x86, Bind TCP Stager
+   linux/x86/meterpreter/bind_tcp                                       normal  Linux Mettle x86, Bind TCP Stager (Linux x86)
+   linux/x86/meterpreter/bind_tcp_uuid                                  normal  Linux Mettle x86, Bind TCP Stager with UUID Support (Linux x86)
+   linux/x86/meterpreter/find_tag                                       normal  Linux Mettle x86, Find Tag Stager
+   linux/x86/meterpreter/reverse_ipv6_tcp                               normal  Linux Mettle x86, Reverse TCP Stager (IPv6)
+   linux/x86/meterpreter/reverse_nonx_tcp                               normal  Linux Mettle x86, Reverse TCP Stager
+   linux/x86/meterpreter/reverse_tcp                                    normal  Linux Mettle x86, Reverse TCP Stager
+   linux/x86/meterpreter/reverse_tcp_uuid                               normal  Linux Mettle x86, Reverse TCP Stager
+   linux/x86/meterpreter_reverse_http                                   normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/x86/meterpreter_reverse_https                                  normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/x86/meterpreter_reverse_tcp                                    normal  Linux Meterpreter, Reverse TCP Inline
    linux/x86/metsvc_bind_tcp                                            normal  Linux Meterpreter Service, Bind TCP
    linux/x86/metsvc_reverse_tcp                                         normal  Linux Meterpreter Service, Reverse TCP Inline
-   linux/x86/mettle/bind_ipv6_tcp                                       normal  Linux Mettle x86, Bind IPv6 TCP Stager (Linux x86)
-   linux/x86/mettle/bind_ipv6_tcp_uuid                                  normal  Linux Mettle x86, Bind IPv6 TCP Stager with UUID Support (Linux x86)
-   linux/x86/mettle/bind_nonx_tcp                                       normal  Linux Mettle x86, Bind TCP Stager
-   linux/x86/mettle/bind_tcp                                            normal  Linux Mettle x86, Bind TCP Stager (Linux x86)
-   linux/x86/mettle/bind_tcp_uuid                                       normal  Linux Mettle x86, Bind TCP Stager with UUID Support (Linux x86)
-   linux/x86/mettle/find_tag                                            normal  Linux Mettle x86, Find Tag Stager
-   linux/x86/mettle/reverse_ipv6_tcp                                    normal  Linux Mettle x86, Reverse TCP Stager (IPv6)
-   linux/x86/mettle/reverse_nonx_tcp                                    normal  Linux Mettle x86, Reverse TCP Stager
-   linux/x86/mettle/reverse_tcp                                         normal  Linux Mettle x86, Reverse TCP Stager
-   linux/x86/mettle/reverse_tcp_uuid                                    normal  Linux Mettle x86, Reverse TCP Stager
    linux/x86/read_file                                                  normal  Linux Read File
    linux/x86/shell/bind_ipv6_tcp                                        normal  Linux Command Shell, Bind IPv6 TCP Stager (Linux x86)
    linux/x86/shell/bind_ipv6_tcp_uuid                                   normal  Linux Command Shell, Bind IPv6 TCP Stager with UUID Support (Linux x86)
@@ -179,7 +204,12 @@
    linux/x86/shell_find_port                                            normal  Linux Command Shell, Find Port Inline
    linux/x86/shell_find_tag                                             normal  Linux Command Shell, Find Tag Inline
    linux/x86/shell_reverse_tcp                                          normal  Linux Command Shell, Reverse TCP Inline
+   linux/zarch/meterpreter_reverse_http                                 normal  Linux Meterpreter, Reverse HTTP Inline
+   linux/zarch/meterpreter_reverse_https                                normal  Linux Meterpreter, Reverse HTTPS Inline
+   linux/zarch/meterpreter_reverse_tcp                                  normal  Linux Meterpreter, Reverse TCP Inline
    mainframe/shell_reverse_tcp                                          normal  Z/OS (MVS) Command Shell, Reverse TCP Inline
+   multi/meterpreter/reverse_http                                       normal  Architecture-Independent Meterpreter Stage, Reverse HTTP Stager (Mulitple Architectures)
+   multi/meterpreter/reverse_https                                      normal  Architecture-Independent Meterpreter Stage, Reverse HTTPS Stager (Mulitple Architectures)
    netware/shell/reverse_tcp                                            normal  NetWare Command Shell, Reverse TCP Stager
    nodejs/shell_bind_tcp                                                normal  Command Shell, Bind TCP (via nodejs)
    nodejs/shell_reverse_tcp                                             normal  Command Shell, Reverse TCP (via nodejs)
@@ -236,6 +266,7 @@
    python/meterpreter/reverse_http                                      normal  Python Meterpreter, Python Reverse HTTP Stager
    python/meterpreter/reverse_https                                     normal  Python Meterpreter, Python Reverse HTTPS Stager
    python/meterpreter/reverse_tcp                                       normal  Python Meterpreter, Python Reverse TCP Stager
+   python/meterpreter/reverse_tcp_ssl                                   normal  Python Meterpreter, Python Reverse TCP SSL Stager
    python/meterpreter/reverse_tcp_uuid                                  normal  Python Meterpreter, Python Reverse TCP Stager with UUID Support
    python/meterpreter_bind_tcp                                          normal  Python Meterpreter Shell, Bind TCP Inline
    python/meterpreter_reverse_http                                      normal  Python Meterpreter Shell, Reverse HTTP Inline
