@@ -28,6 +28,48 @@ COLOR2='\033[1m\033[92m'
 COLOR3='\033[1m'
 RESET='\e[0m'
 
+function update {
+	echo -e "$COLOR3   ___ _           _           _       _ _   "
+	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
+	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
+	echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
+	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
+	echo -e "$COLOR3                        |_|                  "
+	echo -e "$RESET"
+	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3 $RESET"
+	echo -e "$COLOR1+ -- --=[Checking for updates... $RESET"
+	if [[ $(curl -s https://api.github.com/repos/1N3/Findsploit/tags) == "" ]];
+	then
+    	echo -e "$COLOR1+ -- --=[Error: no active internet connection $RESET"
+    	echo ""
+    	exit 1
+  	fi
+  	LATEST_VERSION=$(curl -s https://api.github.com/repos/1N3/Findsploit/tags | grep -Po '"name":.*?[^\\]",'| head -1 | cut -c11-13)
+  	if [[ "$LATEST_VERSION" != "$VER" && "$LATEST_VERSION" != "" ]]; 
+  	then
+   		echo -e "$COLOR1+ -- --=[Findsploit v$LATEST_VERSION is available to download. $RESET"
+   		echo -e "$COLOR1+ -- --=[Do you want to update Findsploit [Y/n]: $RESET"
+    	read answer
+  		if [[ "$answer" == "Y" || "$answer" == "y" ]] ;
+  		then
+  			cd  ~ || { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ; }
+			rm -r Findsploit  2> /dev/null
+			git clone https://github.com/1N3/Findsploit || { echo -e "$COLOR1+ -- --=[Couldn't download latest version $RESET" ; exit 1; }
+			cd Findsploit ||  { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ;}
+			git checkout $LATEST_VERSION 2> /dev/null
+			#chmod +x install.sh #this might be necessary in your case but wasnt in mine.
+			./install.sh
+			cd .. 
+			rm -r Findsploit
+  		else
+     		exit 1
+  		fi
+	else
+  		echo -e "$COLOR1+ -- --=[Findsploit is already the latest version $RESET"
+  		echo ""
+	fi 
+}
+
 if [ -z "$1" ]; 
 then
 	echo -e "$COLOR3   ___ _           _           _       _ _   "
@@ -43,6 +85,12 @@ then
 	echo ""
 	echo ""
 	exit;
+fi
+
+if [ "$1" = "--update" ];
+then
+	update
+	exit
 else
 	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 	echo -e "$COLOR3   ___ _           _           _       _ _   "
@@ -53,7 +101,7 @@ else
 	echo -e "$COLOR3                        |_|                  "
 	echo ""
 	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3"
-   echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+    echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
 	echo ""
 	echo -e "$COLOR1+ -- --=[SEARCHING: $COLOR2 $VARS $RESET"
 	echo ""
