@@ -14,9 +14,9 @@
 
 clear
 
-VER='1.5a'
+VER='1.5a' #stable versions should be named [0-9].[0-9] unstable versions should be labeled [0-9].[0-9][a-Z] the latter will not come up as an update to Findsploit
 SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' # PATH TO THE EXPLOITDB SEARCH SCRIPT
-NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap' # PATH TO NMAP SCRIPTS 
+NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap' # PATH TO NMAP SCRIPTS
 MSF_SEARCH_DIR='/usr/share/findsploit/msf_search' # PATH TO THE FILE CONTAINING METASPLOIT EXPLOITS
 BROWSER_CMD='iceweasel' # SET THE BROWSER COMMAND HERE
 VAR1=$1;
@@ -45,7 +45,7 @@ function update {
     	exit 1
   	fi
   	LATEST_VERSION=$(curl -s https://api.github.com/repos/1N3/Findsploit/tags | grep -Po '"name":.*?[^\\]",'| head -1 | cut -c11-13)
-  	if [[ "$LATEST_VERSION" != "$VER" && "$LATEST_VERSION" != "" ]]; 
+  	if [[ "$LATEST_VERSION" != "$VER" && "$LATEST_VERSION" != "" ]];
   	then
    		echo -e "$COLOR1+ -- --=[Findsploit v$LATEST_VERSION is available to download. $RESET"
    		echo -e "$COLOR1+ -- --=[Do you want to update Findsploit [Y/n]: $RESET"
@@ -58,7 +58,7 @@ function update {
 			cd Findsploit ||  { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ;}
 			git checkout $LATEST_VERSION 2> /dev/null
 			./install.sh
-			cd .. 
+			cd ..
 			rm -r Findsploit
   		else
      		exit 1
@@ -66,10 +66,10 @@ function update {
 	else
   		echo -e "$COLOR1+ -- --=[Findsploit is already the latest version $RESET"
   		echo ""
-	fi 
+	fi
 }
 
-if [ -z "$1" ]; 
+if [ -z "$1" ];
 then
 	echo -e "$COLOR3   ___ _           _           _       _ _   "
 	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
@@ -86,7 +86,7 @@ then
 	exit;
 fi
 
-if [ "$1" = "--update" ];
+if [[ "$1" == "--update" || "$1" == "-u" ]];
 then
 	update
 	exit
@@ -106,22 +106,22 @@ else
 	echo ""
 	echo -e "$COLOR1+ -- --=[NMAP SCRIPTS$RESET"
 	echo ""
-	egrep -i "$VAR1" $NMAP_SCRIPTS | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto 
+	egrep -i "$VAR1" $NMAP_SCRIPTS | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto
 	echo ""
 	echo -e "$COLOR1+ -- --=[METASPLOIT EXPLOITS$RESET"
 	echo ""
-	egrep -i "$VAR1" $MSF_SEARCH_DIR/* | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto 
+	egrep -i "$VAR1" $MSF_SEARCH_DIR/* | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto
 	echo ""
 	echo -e "$COLOR1+ -- --=[EXPLOITDB EXPLOITS$RESET"
 	echo ""
-	$SEARCHSPLOIT_SCRIPT $VARS 
+	$SEARCHSPLOIT_SCRIPT $VARS
 	echo ""
 	echo -e "$COLOR2+ -- --=[Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
 	$BROWSER_CMD 2> /dev/null &
 	sleep 5
 	$BROWSER_CMD 'https://www.exploit-db.com/search/?action=search&description='$VAR1'+'$VAR2'+'$VAR3'&e_author=' 2>/dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null 
+	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit+site:www.securityfocus.com' 2> /dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:0day.today' 2> /dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com' 2> /dev/null
