@@ -57,7 +57,6 @@ function update {
 			git clone https://github.com/1N3/Findsploit || { echo -e "$COLOR1+ -- --=[Couldn't download latest version $RESET" ; exit 1; }
 			cd Findsploit ||  { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ;}
 			git checkout $LATEST_VERSION 2> /dev/null
-			#chmod +x install.sh #this might be necessary in your case but wasnt in mine.
 			./install.sh
 			cd .. 
 			rm -r Findsploit
