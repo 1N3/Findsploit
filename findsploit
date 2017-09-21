@@ -127,5 +127,6 @@ else
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com' 2> /dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:packetstormsecurity.com' 2> /dev/null
 	$BROWSER_CMD 'https://exploits.shodan.io/?q='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
+	$BROWSER_CMD 'https://vulners.com/search?query='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
 fi
 exit
