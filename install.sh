@@ -26,7 +26,7 @@ rm -Rf $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 mkdir -p $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 cp -Rf $PWD/* $FINDSPLOIT_INSTALL_DIR 
 cd $FINDSPLOIT_INSTALL_DIR
-apt-get install exploitdb
+apt-get install exploitdb xdg-utils
 mkdir loot 2> /dev/null
 chmod +x $FINDSPLOIT_INSTALL_DIR/findsploit
 chmod +x $FINDSPLOIT_INSTALL_DIR/copysploit
