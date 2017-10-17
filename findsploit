@@ -19,10 +19,12 @@ SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' # PATH TO THE EXPLOITDB 
 NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap' # PATH TO NMAP SCRIPTS
 MSF_SEARCH_DIR='/usr/share/findsploit/msf_search' # PATH TO THE FILE CONTAINING METASPLOIT EXPLOITS
 BROWSER_CMD='xdg-open' # SET THE BROWSER COMMAND HERE
+SEARCH_ARGS=( "exploit" "site:0day.today" "exploit+site:www.securityfocus.com" "site:www.security-database.com" "site:packetstormsecurity.com" )
+SLEEP_BEFORE_ONLINE=5
 VAR1=$1;
 VAR2=$2;
 VAR3=$3;
-VARS="$1 $2 $3";
+VARS="$*";
 COLOR1='\033[91m'
 COLOR2='\033[1m\033[92m'
 COLOR3='\033[1m'
@@ -69,6 +71,20 @@ function update {
 	fi
 }
 
+function fmtArgs(){
+        delim=$1 # set the delimiter
+        shift    # skip the delimiters arg
+        var=$1   # get the first real arg
+        shift    # don't prefix it with the delimiter
+
+        for name in $*
+        do
+		# set the delimiter for infinite amout of args
+                var=$var$delim$name
+        done
+        echo $var
+}
+
 if [ -z "$1" ];
 then
 	echo -e "$COLOR3   ___ _           _           _       _ _   "
@@ -100,7 +116,7 @@ else
 	echo -e "$COLOR3                        |_|                  "
 	echo ""
 	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3"
-    echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
 	echo ""
 	echo -e "$COLOR1+ -- --=[SEARCHING: $COLOR2 $VARS $RESET"
 	echo ""
@@ -116,17 +132,19 @@ else
 	echo ""
 	$SEARCHSPLOIT_SCRIPT $VARS
 	echo ""
+
 	echo -e "$COLOR2+ -- --=[Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
 	$BROWSER_CMD 2> /dev/null &
-	sleep 5
-	$BROWSER_CMD 'https://www.exploit-db.com/search/?action=search&description='$VAR1'+'$VAR2'+'$VAR3'&e_author=' 2>/dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit+site:www.securityfocus.com' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:0day.today' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:packetstormsecurity.com' 2> /dev/null
-	$BROWSER_CMD 'https://exploits.shodan.io/?q='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
-	$BROWSER_CMD 'https://vulners.com/search?query='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
+	sleep $SLEEP_BEFORE_ONLINE
+
+	$BROWSER_CMD 'https://www.exploit-db.com/search/?action=search&description='$(fmtArgs '+' $VARS)'&e_author=' 2>/dev/null
+
+	for args in "${SEARCH_ARGS[@]}"; do
+		$BROWSER_CMD 'https://www.google.ca/search?q='$(fmtArgs '%20' $VARS)'+'$args 2> /dev/null
+	done
+
+	$BROWSER_CMD 'https://exploits.shodan.io/?q='$(fmtArgs '+' $VARS) 2> /dev/null
+	$BROWSER_CMD 'https://vulners.com/search?query='$(fmtArgs '+' $VARS) 2> /dev/null
 fi
 exit
