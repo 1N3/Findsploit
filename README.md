@@ -15,5 +15,5 @@ For updates to this script, use `git clone https://github.com/1N3/Findsploit.git
 
 ### USAGE
 ```
-root@kali:/# findsploit <search_term_1> <search_term_2> <search_term_3> (ie. findsploit microsoft iis 7.5)
+root@kali:/# findsploit <search_term_1> <search_term_2> ... (ie. findsploit microsoft iis 7.5)
 ```
