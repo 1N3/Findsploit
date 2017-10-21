@@ -2,7 +2,7 @@
 # Install script for Findsploit by 1N3@CrowdShield
 # https://crowdshield.com 
 #
-# VARS
+
 FINDSPLOIT_INSTALL_DIR=/usr/share/findsploit
 COLOR1='\033[91m'
 COLOR2='\033[92m'

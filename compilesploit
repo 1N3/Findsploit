@@ -7,8 +7,7 @@ COLOR1='\033[1m\033[91m'
 COLOR2='\033[1m\033[92m'
 COLOR3='\033[1m'
 
-if [ -z "$1" ]; 
-then
+function logo {
 	echo -e "$COLOR3   ___ _           _           _       _ _   "
 	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
 	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
@@ -16,6 +15,11 @@ then
 	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
 	echo -e "$COLOR3                        |_|                  "
 	echo ""
+}
+
+if [ -z "$1" ]; 
+then
+	logo
 	echo -e "$COLOR1+ -- --=[compilesploit by 1N3"
 	echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
 	echo -e "$COLOR1+ -- --=[Usage: compilesploit <filename>"
@@ -24,12 +28,7 @@ then
 	exit;
 else
 	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-	echo -e "$COLOR3   ___ _           _           _       _ _   "
-	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
-	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
-	echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
-	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
-	echo -e "$COLOR3                        |_|                  "
+	logo
 	echo ""
 	echo -e "$COLOR1+ -- --=[compilesploit by 1N3"
         echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"

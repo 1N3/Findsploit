@@ -6,7 +6,7 @@ https://crowdshield.com
 ### ABOUT
 Finsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
 
-For updates to this script, use git clone https://github.com/1N3/Findsploit.git
+For updates to this script, type `findsploit update`
 
 ### INSTALLATION
 ```
@@ -19,7 +19,7 @@ Search for all exploits and modules using a single search term:
 root@kali:/# findsploit <search_term_1> (ie. findsploit apache)
 
 Search multiple search terms:
-root@kali:/# findsploit <search_term_1> <search_term_2> <search_term_3> (ie. findsploit microsoft iis 7.5)
+root@kali:/# findsploit <search_term_1> <search_term_2> <search_term_3> ... (ie. findsploit microsoft iis 7.5)
 
 Show all NMap scripts:
 root@kali:/# findsploit nmap 

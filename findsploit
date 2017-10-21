@@ -4,25 +4,18 @@
 #
 # Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
 #
-# INSTALLATION
-#  run ./install.sh
-#
-# This script uses the local exploit-db database for exploits. To install this database locally, use the update.sh script under the exploitdb folder first. You will also need to install nmaps script database locally in /usr/share/nmap/scripts/ for the script to work.
-#
-# For updates to this script, use git clone https://github.com/1N3/Findsploit.git
-#
 
 clear
 
-VER='1.6' #stable versions should be named [0-9].[0-9] unstable versions should be labeled [0-9].[0-9][a-Z] the latter will not come up as an update to Findsploit
-SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' # PATH TO THE EXPLOITDB SEARCH SCRIPT
-NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap' # PATH TO NMAP SCRIPTS
-MSF_SEARCH_DIR='/usr/share/findsploit/msf_search' # PATH TO THE FILE CONTAINING METASPLOIT EXPLOITS
-BROWSER_CMD='xdg-open' # SET THE BROWSER COMMAND HERE
+VER='1.6' 
+SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' 
+NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap'
+MSF_SEARCH_DIR='/usr/share/findsploit/msf_search'
+BROWSER_CMD='xdg-open' 
 VAR1=$1;
 VAR2=$2;
 VAR3=$3;
-VARS="$1 $2 $3";
+VARS="$*"
 COLOR1='\033[91m'
 COLOR2='\033[1m\033[92m'
 COLOR3='\033[1m'
