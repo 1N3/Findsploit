@@ -129,7 +129,7 @@ then
 	exit;
 fi
 
-if [[ "$1" == "--update" || "$1" == "-u" ]];
+if [[ "$1" == "update" || "$1" == "--update" || "$1" == "-u" ]];
 then
 	update
 	exit
