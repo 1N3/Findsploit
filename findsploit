@@ -11,7 +11,12 @@ VER='1.6'
 SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' 
 NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap'
 MSF_SEARCH_DIR='/usr/share/findsploit/msf_search'
+EXPLOIT_URLS_PATH='/usr/share/findsploit/urls'
 BROWSER_CMD='xdg-open' 
+# Create this file to override the specified VARS above
+if [[ -e ~/.config/findsploit.conf ]]; then
+    source ~/.config/findsploit.conf 
+fi
 VAR1=$1;
 VAR2=$2;
 VAR3=$3;
@@ -123,15 +128,16 @@ else
 	echo ""
 	echo -e "$COLOR2+ -- --=[Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
-	$BROWSER_CMD 2> /dev/null &
+	$BROWSER_CMD 'https://vuldb.com/?search' 2> /dev/null &
 	sleep 5
-	$BROWSER_CMD 'https://www.exploit-db.com/search/?action=search&description='$VAR1'+'$VAR2'+'$VAR3'&e_author=' 2>/dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit+site:www.securityfocus.com' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:0day.today' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:packetstormsecurity.com' 2> /dev/null
-	$BROWSER_CMD 'https://exploits.shodan.io/?q='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
-	$BROWSER_CMD 'https://vulners.com/search?query='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null
+
+    OLDIFS=$IFS
+IFS="
+"
+    for raw_url in $(cat $EXPLOIT_URLS_PATH) ; do
+        printf -v url "$raw_url" "$VAR1" "$VAR2" "$VAR3"
+        $BROWSER_CMD "$url" 2> /dev/null
+    done
+    IFS=$OLDIFS
 fi
 exit
