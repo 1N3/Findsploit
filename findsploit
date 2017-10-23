@@ -2,64 +2,110 @@
 # Findsploit by 1N3 @CrowdShield
 # https://crowdshield.com
 #
-# Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
+# Find exploits in local and online databases instantly.
 #
 
 clear
 
-VER='1.6' 
+VER='1.7' 
 SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' 
 NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap'
 MSF_SEARCH_DIR='/usr/share/findsploit/msf_search'
 EXPLOIT_URLS_PATH='/usr/share/findsploit/urls'
 BROWSER_CMD='xdg-open' 
+
 # Create this file to override the specified VARS above
 if [[ -e ~/.config/findsploit.conf ]]; then
     source ~/.config/findsploit.conf 
 fi
+
 VAR1=$1;
 VAR2=$2;
 VAR3=$3;
 VARS="$*"
-COLOR1='\033[91m'
-COLOR2='\033[1m\033[92m'
-COLOR3='\033[1m'
+OKBLUE='\033[94m'
+OKRED='\033[91m'
+OKGREEN='\033[92m'
+OKORANGE='\033[93m'
 RESET='\e[0m'
 
 function logo {
-	echo -e "$COLOR3   ___ _           _           _       _ _   "
-	echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
-	echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
-	echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
-	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
-	echo -e "$COLOR3                        |_|                  "
+	echo -e "$OKRED   ___ _           _           _       _ _   "
+	echo -e "$OKRED  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
+	echo -e "$OKRED / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
+	echo -e "$OKRED/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
+	echo -e "$OKRED\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
+	echo -e "$OKRED                        |_|                  "
 	echo ""
-	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3"
-    echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$OKBLUE + -- --=[findsploit v$VER by 1N3"
+    echo -e "$OKBLUE + -- --=[https://crowdshield.com$RESET"
+    echo ""
+}
+
+function help {
+	logo
+	echo -e "$OKGREEN + -- ---------=[ABOUT]=---------------- -- +$RESET"
+	echo "Finsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and 'compilesploit' to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c)."
 	echo ""
+	echo ""
+	echo -e "$OKGREEN + -- ---------=[INSTALLATION]=--------- -- +$RESET"
+	echo "# ./install.sh"
+	echo ""
+	echo -e "$OKGREEN + -- ---------=[UPDATES]=-------------- -- +$RESET"
+	echo "# findsploit update"
+	echo ""
+	echo -e "$OKGREEN + -- ---------=[USAGE]=---------------- -- +$RESET"
+	echo "Search for all exploits and modules using a single search term:"
+	echo "# findsploit <search_term_1> (ie. findsploit apache)"
+	echo ""
+	echo "Search multiple search terms:"
+	echo "# findsploit <search_term_1> <search_term_2> <search_term_3> ... (ie. findsploit microsoft iis 7.5)"
+	echo ""
+	echo "Show all NMap scripts:"
+	echo "# findsploit nmap "
+	echo ""
+	echo "Search for all FTP NMap scripts:"
+	echo "# findsploit nmap | grep ftp"
+	echo ""
+	echo "Show all Metasploit auxiliary modules:"
+	echo "# findsploit auxiliary"
+	echo ""
+	echo "Show all Metasploit exploits:"
+	echo "# findsploit exploits"
+	echo ""
+	echo "Show all Metasploit encoder modules:"
+	echo "# findsploit encoder"
+	echo ""
+	echo "Show all Metasploit payloads modules:"
+	echo "# findsploit payloads"
+	echo ""
+	echo "Search all Metasploit payloads for windows only payloads:"
+	echo "# findsploit payloads | grep windows"
+	echo ""
+	exit;
 }
 
 function update {
 	logo
-	echo -e "$COLOR1+ -- --=[Checking for updates... $RESET"
+	echo -e "$OKBLUE + -- --=[Checking for updates... $RESET"
 	if [[ $(curl -s https://api.github.com/repos/1N3/Findsploit/tags) == "" ]];
 	then
-    	echo -e "$COLOR1+ -- --=[Error: no active internet connection $RESET"
+    	echo -e "$OKBLUE + -- --=[Error: no active internet connection $RESET"
     	echo ""
     	exit 1
   	fi
   	LATEST_VERSION=$(curl -s https://api.github.com/repos/1N3/Findsploit/tags | grep -Po '"name":.*?[^\\]",'| head -1 | cut -c11-13)
   	if [[ "$LATEST_VERSION" != "$VER" && "$LATEST_VERSION" != "" ]];
   	then
-   		echo -e "$COLOR1+ -- --=[Findsploit v$LATEST_VERSION is available to download. $RESET"
-   		echo -e "$COLOR1+ -- --=[Do you want to update Findsploit [Y/n]: $RESET"
+   		echo -e "$OKBLUE + -- --=[Findsploit v$LATEST_VERSION is available to download. $RESET"
+   		echo -e "$OKBLUE + -- --=[Do you want to update Findsploit [Y/n]: $RESET"
     	read answer
   		if [[ "$answer" == "Y" || "$answer" == "y" ]] ;
   		then
-  			cd  ~ || { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ; }
+  			cd  ~ || { echo -e "$OKBLUE + -- --=[Update Failed $RESET" ; exit 1 ; }
 			rm -r Findsploit  2> /dev/null
-			git clone https://github.com/1N3/Findsploit || { echo -e "$COLOR1+ -- --=[Couldn't download latest version $RESET" ; exit 1; }
-			cd Findsploit ||  { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ;}
+			git clone https://github.com/1N3/Findsploit || { echo -e "$OKBLUE + -- --=[Couldn't download latest version $RESET" ; exit 1; }
+			cd Findsploit ||  { echo -e "$OKBLUE + -- --=[Update Failed $RESET" ; exit 1 ;}
 			git checkout $LATEST_VERSION 2> /dev/null
 			./install.sh
 			cd ..
@@ -68,15 +114,16 @@ function update {
      		exit 1
   		fi
 	else
-  		echo -e "$COLOR1+ -- --=[Findsploit is already the latest version $RESET"
+  		echo -e "$OKBLUE + -- --=[Findsploit is already the latest version $RESET"
   		echo ""
 	fi
+	exit 1
 }
 
 if [ -z "$1" ];
 then
 	logo
-	echo -e "$COLOR1+ -- --=[Usage: findsploit windows xp remote, etc."
+	echo -e "$OKBLUE + -- --=[Usage: findsploit windows xp remote, etc."
 	echo ""
 	echo ""
 	exit;
@@ -85,6 +132,10 @@ fi
 if [[ "$1" == "--update" || "$1" == "-u" ]];
 then
 	update
+	exit
+elif [[ "$1" == "help" || "$1" == "--help" || "$1" == "-h" ]]
+then
+	help
 	exit
 elif [[ "$1" == "auxiliary" ]];
 then
@@ -109,20 +160,17 @@ then
 else
 	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 	logo
-	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3"
-    echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$OKBLUE + -- --=[SEARCHING:$RESET$OKORANGE $VARS $RESET"
 	echo ""
-	echo -e "$COLOR1+ -- --=[SEARCHING: $COLOR2 $VARS $RESET"
-	echo ""
-	echo -e "$COLOR1+ -- --=[NMAP SCRIPTS$RESET"
+	echo -e "$OKBLUE + -- --=[NMAP SCRIPTS$RESET"
 	echo ""
 	egrep -i "$VAR1" $NMAP_SCRIPTS | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto
 	echo ""
-	echo -e "$COLOR1+ -- --=[METASPLOIT EXPLOITS$RESET"
+	echo -e "$OKBLUE + -- --=[METASPLOIT EXPLOITS$RESET"
 	echo ""
 	egrep -i "$VAR1" $MSF_SEARCH_DIR/* | egrep -i "$VAR2" --color=auto | egrep -i "$VAR3" --color=auto
 	echo ""
-	echo -e "$COLOR1+ -- --=[EXPLOITDB EXPLOITS$RESET"
+	echo -e "$OKBLUE + -- --=[EXPLOITDB EXPLOITS$RESET"
 	echo ""
 	$SEARCHSPLOIT_SCRIPT $VARS
 	echo ""
@@ -132,8 +180,7 @@ else
 	sleep 5
 
     OLDIFS=$IFS
-IFS="
-"
+	IFS=""
     for raw_url in $(cat $EXPLOIT_URLS_PATH) ; do
         printf -v url "$raw_url" "$VAR1" "$VAR2" "$VAR3"
         $BROWSER_CMD "$url" 2> /dev/null
