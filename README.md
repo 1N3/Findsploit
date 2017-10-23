@@ -16,29 +16,29 @@ For updates to this script, type `findsploit update`
 ### USAGE
 ```
 Search for all exploits and modules using a single search term:
-root@kali:/# findsploit <search_term_1> (ie. findsploit apache)
+*  findsploit <search_term_1> (ie. findsploit apache)
 
 Search multiple search terms:
-root@kali:/# findsploit <search_term_1> <search_term_2> <search_term_3> ... (ie. findsploit microsoft iis 7.5)
+*  findsploit <search_term_1> <search_term_2> <search_term_3> ...
 
 Show all NMap scripts:
-root@kali:/# findsploit nmap 
+*  findsploit nmap 
 
 Search for all FTP NMap scripts:
-root@kali:/# findsploit nmap | grep ftp
+*  findsploit nmap | grep ftp
 
 Show all Metasploit auxiliary modules:
-root@kali:/# findsploit auxiliary
+*  findsploit auxiliary
 
 Show all Metasploit exploits:
-root@kali:/# findsploit exploits
+*  findsploit exploits
 
 Show all Metasploit encoder modules:
-root@kali:/# findsploit encoder
+*  findsploit encoder
 
 Show all Metasploit payloads modules:
-root@kali:/# findsploit payloads
+*  findsploit payloads
 
 Search all Metasploit payloads for windows only payloads:
-root@kali:/# findsploit payloads | grep windows
+*  findsploit payloads | grep windows
 ```
