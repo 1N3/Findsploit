@@ -38,8 +38,8 @@ function logo {
 	echo -e "$OKRED                        |_|                  "
 	echo ""
 	echo -e "$OKBLUE + -- --=[findsploit v$VER by 1N3"
-    echo -e "$OKBLUE + -- --=[https://crowdshield.com$RESET"
-    echo ""
+	echo -e "$OKBLUE + -- --=[https://crowdshield.com$RESET"
+	echo ""
 }
 
 function help {
@@ -176,7 +176,6 @@ else
 	echo ""
 	echo -e "$COLOR2+ -- --=[Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
-	$BROWSER_CMD 'https://vuldb.com/?search' 2> /dev/null &
 	sleep 5
 
     OLDIFS=$IFS
