@@ -7,8 +7,8 @@
 
 clear
 
-VER='1.7' 
-SEARCHSPLOIT_SCRIPT='/usr/share/exploitdb/searchsploit' 
+VER='1.8' 
+SEARCHSPLOIT_SCRIPT='/usr/bin/searchsploit' 
 NMAP_SCRIPTS='/usr/share/findsploit/nmap/nmap'
 MSF_SEARCH_DIR='/usr/share/findsploit/msf_search'
 EXPLOIT_URLS_PATH='/usr/share/findsploit/urls'
