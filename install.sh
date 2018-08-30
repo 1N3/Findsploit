@@ -34,9 +34,9 @@ chmod +x $FINDSPLOIT_INSTALL_DIR/compilesploit
 rm -f /usr/bin/findsploit 2> /dev/null
 rm -f /usr/bin/copysploit 2> /dev/null
 rm -f /usr/bin/compilesploit 2> /dev/null
-ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
-ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
-ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
+ln -s $FINDSPLOIT_INSTALL_DIR/findsploit /usr/bin/findsploit
+ln -s $FINDSPLOIT_INSTALL_DIR/copysploit /usr/bin/copysploit
+ln -s $FINDSPLOIT_INSTALL_DIR/compilesploit /usr/bin/compilesploit
 echo -e "$OKORANGE + -- --=[Done!$RESET"
 
 
