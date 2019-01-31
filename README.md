@@ -6,8 +6,6 @@ https://crowdshield.com
 ### ABOUT
 Findsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
 
-For updates to this script, type `findsploit update`
-
 ### INSTALLATION
 ```
 ./install.sh
