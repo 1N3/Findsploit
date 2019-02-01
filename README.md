@@ -1,5 +1,5 @@
-# Findsploit by 1N3@CrowdShield
-https://crowdshield.com
+# Findsploit by @xer0dayz
+https://xerosecurity.com
 
 ![alt tag](https://github.com/1N3/Findsploit/blob/master/findsploit.png)
 
@@ -40,6 +40,9 @@ Show all Metasploit payloads modules:
 Search all Metasploit payloads for windows only payloads:
 *  findsploit payloads | grep windows
 ```
+
+## UPDATE:
+To update exploit-db and check for new versions of findsploit, run ```findsploit --update```
 
 ## LICENSE:
 This software is free to distribute, modify and use with the condition that credit is provided to the creator (1N3@CrowdShield) and is not for commercial use.
