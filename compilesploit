@@ -1,5 +1,5 @@
 #!/bin/bash
-# compilesploit by 1N3
+# compilesploit by @xer0dayz
 # A small script to automatically find and copy an exploit file to the current directory...
 #
 
@@ -20,8 +20,8 @@ function logo {
 if [ -z "$1" ]; 
 then
 	logo
-	echo -e "$COLOR1+ -- --=[compilesploit by 1N3"
-	echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$COLOR1+ -- --=[compilesploit by @xer0dayz"
+	echo -e "$COLOR1+ -- --=[https://xerosecurity.com$RESET"
 	echo -e "$COLOR1+ -- --=[Usage: compilesploit <filename>"
 	echo ""
 	echo ""
@@ -30,8 +30,8 @@ else
 	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 	logo
 	echo ""
-	echo -e "$COLOR1+ -- --=[compilesploit by 1N3"
-        echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$COLOR1+ -- --=[compilesploit by @xer0dayz"
+        echo -e "$COLOR1+ -- --=[https://xerosecurity.com$RESET"
 	echo ""
 	echo -e "$COLOR1+ -- --=[COMPILING:$COLOR2 $1 $RESET"
 	echo ""

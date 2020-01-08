@@ -1,6 +1,6 @@
 #!/bin/bash
-# Install script for Findsploit by 1N3@CrowdShield
-# https://crowdshield.com 
+# Install script for Findsploit by @xer0dayz
+# https://xerosecurity.com 
 #
 
 FINDSPLOIT_INSTALL_DIR=/usr/share/findsploit
@@ -16,8 +16,8 @@ echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
 echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
 echo -e "$COLOR3                        |_|                  "
 echo -e "$RESET"
-echo -e "$COLOR1+ -- --=[findsploit by 1N3"
-echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+echo -e "$COLOR1+ -- --=[findsploit by @xer0dayz"
+echo -e "$COLOR1+ -- --=[https://xerosecurity.com$RESET"
 echo -e "$COLOR1+ -- --=[Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 

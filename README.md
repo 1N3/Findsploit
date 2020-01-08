@@ -1,5 +1,5 @@
-# Findsploit by 1N3@CrowdShield
-https://crowdshield.com
+# Findsploit by @xer0dayz
+https://xerosecurity.com
 
 ![alt tag](https://github.com/1N3/Findsploit/blob/master/findsploit.png)
 
@@ -44,11 +44,9 @@ Search all Metasploit payloads for windows only payloads:
 ```
 
 ## LICENSE:
-This software is free to distribute, modify and use with the condition that credit is provided to the creator (1N3@CrowdShield) and is not for commercial use.
+You may modify and re-distribute this software as long as the project name "Findsploit", credit to the author "xer0dayz" and website URL "https://xerosecurity.com" are NOT mofified. Doing so will break the license agreement and a takedown notice will be issued. 
 
-## DONATIONS:
-Donations are welcome. This will help fascilitate improved features, frequent updates and better overall support.
-- [x] BTC 1Fav36btfmdrYpCAR65XjKHhxuJJwFyKum
-- [x] DASH XoWYdMDGb7UZmzuLviQYtUGb5MNXSkqvXG
-- [x] ETH 0x20bB09273702eaBDFbEE9809473Fd04b969a794d
-- [x] LTC LQ6mPewec3xeLBYMdRP4yzeta6b9urqs2f
+## LINKS:
+- [Twitter](https://www.twitter.com/xer0dayz "Personal Twitter")
+- [Twitter](https://www.twitter.com/xerosecurity "Company Twitter")
+- [Website](https://xerosecurity.com "XeroSecurity"

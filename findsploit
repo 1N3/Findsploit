@@ -1,6 +1,6 @@
 #!/bin/bash
-# Findsploit by 1N3 @CrowdShield
-# https://crowdshield.com
+# Findsploit by @xer0dayz 
+# https://xerosecurity.com
 #
 # Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
 #
@@ -29,21 +29,21 @@ function logo {
 	echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
 	echo -e "$COLOR3                        |_|                  "
 	echo ""
-	echo -e "$COLOR1+ -- --=[findsploit v$VER by 1N3"
-    echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
+	echo -e "$COLOR1+ -- --=[findsploit v$VER by @xer0dayz"
+    echo -e "$COLOR1+ -- --=[https://xerosecurity.com$RESET"
 	echo ""
 }
 
 function update {
 	logo
 	echo -e "$COLOR1+ -- --=[Checking for updates... $RESET"
-	if [[ $(curl -s https://api.github.com/repos/1N3/Findsploit/tags) == "" ]];
+	if [[ $(curl -s https://api.github.com/repos/@xer0dayz/Findsploit/tags) == "" ]];
 	then
     	echo -e "$COLOR1+ -- --=[Error: no active internet connection $RESET"
     	echo ""
     	exit 1
   	fi
-  	LATEST_VERSION=$(curl -s https://api.github.com/repos/1N3/Findsploit/tags | grep -Po '"name":.*?[^\\]",'| head -1 | cut -c11-13)
+  	LATEST_VERSION=$(curl -s https://api.github.com/repos/@xer0dayz/Findsploit/tags | grep -Po '"name":.*?[^\\]",'| head -1 | cut -c11-13)
   	if [[ "$LATEST_VERSION" != "$VER" && "$LATEST_VERSION" != "" ]];
   	then
    		echo -e "$COLOR1+ -- --=[Findsploit v$LATEST_VERSION is available to download. $RESET"
@@ -53,7 +53,7 @@ function update {
   		then
   			cd  ~ || { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ; }
 			rm -r Findsploit  2> /dev/null
-			git clone https://github.com/1N3/Findsploit || { echo -e "$COLOR1+ -- --=[Couldn't download latest version $RESET" ; exit 1; }
+			git clone https://github.com/@xer0dayz/Findsploit || { echo -e "$COLOR1+ -- --=[Couldn't download latest version $RESET" ; exit 1; }
 			cd Findsploit ||  { echo -e "$COLOR1+ -- --=[Update Failed $RESET" ; exit 1 ;}
 			git checkout $LATEST_VERSION 2> /dev/null
 			./install.sh
@@ -120,7 +120,7 @@ else
 	echo ""
 	echo -e "$COLOR2+ -- --=[Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
-	$BROWSER_CMD 'https://crowdshield.com' 2> /dev/null &
+	$BROWSER_CMD 'https://xerosecurity.com' 2> /dev/null &
 	sleep 5
 	$BROWSER_CMD 'https://www.exploit-db.com/search/?action=search&description='$VAR1'+'$VAR2'+'$VAR3'&e_author=' 2>/dev/null &> /dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null &> /dev/null
