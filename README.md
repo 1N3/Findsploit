@@ -4,9 +4,7 @@ https://xerosecurity.com
 ![alt tag](https://github.com/1N3/Findsploit/blob/master/findsploit.png)
 
 ### ABOUT
-Finsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
-
-For updates to this script, type `findsploit update`
+Findsploit is a simple bash script to quickly and easily search both local and online exploit databases. This repository also includes "copysploit" to copy any exploit-db exploit to the current directory and "compilesploit" to automatically compile and run any C exploit (ie. ./copysploit 1337.c && ./compilesploit 1337.c).
 
 ### INSTALLATION
 ```
@@ -42,6 +40,9 @@ Show all Metasploit payloads modules:
 Search all Metasploit payloads for windows only payloads:
 *  findsploit payloads | grep windows
 ```
+
+## UPDATE:
+To update exploit-db and check for new versions of findsploit, run ```findsploit --update```
 
 ## LICENSE:
 You may modify and re-distribute this software as long as the project name "Findsploit", credit to the author "xer0dayz" and website URL "https://xerosecurity.com" are NOT mofified. Doing so will break the license agreement and a takedown notice will be issued. 
