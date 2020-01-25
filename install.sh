@@ -1,27 +1,30 @@
 #!/bin/bash
-# Install script for Findsploit by 1N3@CrowdShield
-# https://crowdshield.com 
+# Install script for Findsploit by @xer0dayz
+# https://xerosecurity.com 
 #
 
 FINDSPLOIT_INSTALL_DIR=/usr/share/findsploit
-COLOR1='\033[91m'
-COLOR2='\033[92m'
-COLOR3='\033[92m'
+
+OKBLUE='\033[94m'
+OKRED='\033[91m'
+OKGREEN='\033[92m'
+OKORANGE='\033[93m'
 RESET='\e[0m'
+REGEX='^[0-9]+$'
 
-echo -e "$COLOR3   ___ _           _           _       _ _   "
-echo -e "$COLOR3  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
-echo -e "$COLOR3 / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
-echo -e "$COLOR3/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
-echo -e "$COLOR3\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
-echo -e "$COLOR3                        |_|                  "
+echo -e "$OKRED   ___ _           _           _       _ _   "
+echo -e "$OKRED  / __(_)_ __   __| |___ _ __ | | ___ (_) |_ "
+echo -e "$OKRED / _\ | | '_ \ / _\` / __| '_ \| |/ _ \| | __|"
+echo -e "$OKRED/ /   | | | | | (_| \__ \ |_) | | (_) | | |_ "
+echo -e "$OKRED\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
+echo -e "$OKRED                        |_|                  "
 echo -e "$RESET"
-echo -e "$COLOR1+ -- --=[findsploit by 1N3"
-echo -e "$COLOR1+ -- --=[https://crowdshield.com$RESET"
-echo -e "$COLOR1+ -- --=[Usage: findsploit windows xp remote, etc."
+echo -e "$OKRED+ -- --=[ findsploit by @xer0dayz"
+echo -e "$OKRED+ -- --=[ https://xerosecurity.com$RESET"
+echo -e "$OKRED+ -- --=[ Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 
-echo -e "$OKGREEN + -- --=[This script will install findsploit under $FINDSPLOIT_INSTALL_DIR."
+echo -e "$OKORANGE + -- --=[ This script will install findsploit under $FINDSPLOIT_INSTALL_DIR. $RESET"
 rm -Rf $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 mkdir -p $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 cp -Rf $PWD/* $FINDSPLOIT_INSTALL_DIR 
@@ -37,6 +40,6 @@ rm -f /usr/bin/compilesploit 2> /dev/null
 ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
 ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
 ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
-echo -e "$OKORANGE + -- --=[Done!$RESET"
+echo -e "$OKORANGE + -- --=[ Done! $RESET"
 
 

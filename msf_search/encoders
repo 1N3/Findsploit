@@ -1,40 +1,45 @@
-   cmd/echo                                       good       Echo Command Encoder
-   cmd/generic_sh                                 manual     Generic Shell Variable Substitution Command Encoder
-   cmd/ifs                                        low        Generic ${IFS} Substitution Command Encoder
-   cmd/perl                                       normal     Perl Command Encoder
-   cmd/powershell_base64                          excellent  Powershell Base64 Command Encoder
-   cmd/printf_php_mq                              manual     printf(1) via PHP magic_quotes Utility Command Encoder
-   generic/eicar                                  manual     The EICAR Encoder
-   generic/none                                   normal     The "none" Encoder
-   mipsbe/byte_xori                               normal     Byte XORi Encoder
-   mipsbe/longxor                                 normal     XOR Encoder
-   mipsle/byte_xori                               normal     Byte XORi Encoder
-   mipsle/longxor                                 normal     XOR Encoder
-   php/base64                                     great      PHP Base64 Encoder
-   ppc/longxor                                    normal     PPC LongXOR Encoder
-   ppc/longxor_tag                                normal     PPC LongXOR Encoder
-   sparc/longxor_tag                              normal     SPARC DWORD XOR Encoder
-   x64/xor                                        normal     XOR Encoder
-   x64/zutto_dekiru                               manual     Zutto Dekiru
-   x86/add_sub                                    manual     Add/Sub Encoder
-   x86/alpha_mixed                                low        Alpha2 Alphanumeric Mixedcase Encoder
-   x86/alpha_upper                                low        Alpha2 Alphanumeric Uppercase Encoder
-   x86/avoid_underscore_tolower                   manual     Avoid underscore/tolower
-   x86/avoid_utf8_tolower                         manual     Avoid UTF8/tolower
-   x86/bloxor                                     manual     BloXor - A Metamorphic Block Based XOR Encoder
-   x86/bmp_polyglot                               manual     BMP Polyglot
-   x86/call4_dword_xor                            normal     Call+4 Dword XOR Encoder
-   x86/context_cpuid                              manual     CPUID-based Context Keyed Payload Encoder
-   x86/context_stat                               manual     stat(2)-based Context Keyed Payload Encoder
-   x86/context_time                               manual     time(2)-based Context Keyed Payload Encoder
-   x86/countdown                                  normal     Single-byte XOR Countdown Encoder
-   x86/fnstenv_mov                                normal     Variable-length Fnstenv/mov Dword XOR Encoder
-   x86/jmp_call_additive                          normal     Jump/Call XOR Additive Feedback Encoder
-   x86/nonalpha                                   low        Non-Alpha Encoder
-   x86/nonupper                                   low        Non-Upper Encoder
-   x86/opt_sub                                    manual     Sub Encoder (optimised)
-   x86/service                                    manual     Register Service
-   x86/shikata_ga_nai                             excellent  Polymorphic XOR Additive Feedback Encoder
-   x86/single_static_bit                          manual     Single Static Bit
-   x86/unicode_mixed                              manual     Alpha2 Alphanumeric Unicode Mixedcase Encoder
-   x86/unicode_upper                              manual     Alpha2 Alphanumeric Unicode Uppercase Encoder
+   0   cmd/brace                                      low        No     Bash Brace Expansion Command Encoder
+   1   cmd/echo                                       good       No     Echo Command Encoder
+   2   cmd/generic_sh                                 manual     No     Generic Shell Variable Substitution Command Encoder
+   3   cmd/ifs                                        low        No     Bourne ${IFS} Substitution Command Encoder
+   4   cmd/perl                                       normal     No     Perl Command Encoder
+   5   cmd/powershell_base64                          excellent  No     Powershell Base64 Command Encoder
+   6   cmd/printf_php_mq                              manual     No     printf(1) via PHP magic_quotes Utility Command Encoder
+   7   generic/eicar                                  manual     No     The EICAR Encoder
+   8   generic/none                                   normal     No     The "none" Encoder
+   9   mipsbe/byte_xori                               normal     No     Byte XORi Encoder
+   10  mipsbe/longxor                                 normal     No     XOR Encoder
+   11  mipsle/byte_xori                               normal     No     Byte XORi Encoder
+   12  mipsle/longxor                                 normal     No     XOR Encoder
+   13  php/base64                                     great      No     PHP Base64 Encoder
+   14  ppc/longxor                                    normal     No     PPC LongXOR Encoder
+   15  ppc/longxor_tag                                normal     No     PPC LongXOR Encoder
+   16  ruby/base64                                    great      No     Ruby Base64 Encoder
+   17  sparc/longxor_tag                              normal     No     SPARC DWORD XOR Encoder
+   18  x64/xor                                        normal     No     XOR Encoder
+   19  x64/xor_context                                normal     No     Hostname-based Context Keyed Payload Encoder
+   20  x64/xor_dynamic                                normal     No     Dynamic key XOR Encoder
+   21  x64/zutto_dekiru                               manual     No     Zutto Dekiru
+   22  x86/add_sub                                    manual     No     Add/Sub Encoder
+   23  x86/alpha_mixed                                low        No     Alpha2 Alphanumeric Mixedcase Encoder
+   24  x86/alpha_upper                                low        No     Alpha2 Alphanumeric Uppercase Encoder
+   25  x86/avoid_underscore_tolower                   manual     No     Avoid underscore/tolower
+   26  x86/avoid_utf8_tolower                         manual     No     Avoid UTF8/tolower
+   27  x86/bloxor                                     manual     No     BloXor - A Metamorphic Block Based XOR Encoder
+   28  x86/bmp_polyglot                               manual     No     BMP Polyglot
+   29  x86/call4_dword_xor                            normal     No     Call+4 Dword XOR Encoder
+   30  x86/context_cpuid                              manual     No     CPUID-based Context Keyed Payload Encoder
+   31  x86/context_stat                               manual     No     stat(2)-based Context Keyed Payload Encoder
+   32  x86/context_time                               manual     No     time(2)-based Context Keyed Payload Encoder
+   33  x86/countdown                                  normal     No     Single-byte XOR Countdown Encoder
+   34  x86/fnstenv_mov                                normal     No     Variable-length Fnstenv/mov Dword XOR Encoder
+   35  x86/jmp_call_additive                          normal     No     Jump/Call XOR Additive Feedback Encoder
+   36  x86/nonalpha                                   low        No     Non-Alpha Encoder
+   37  x86/nonupper                                   low        No     Non-Upper Encoder
+   38  x86/opt_sub                                    manual     No     Sub Encoder (optimised)
+   39  x86/service                                    manual     No     Register Service
+   40  x86/shikata_ga_nai                             excellent  No     Polymorphic XOR Additive Feedback Encoder
+   41  x86/single_static_bit                          manual     No     Single Static Bit
+   42  x86/unicode_mixed                              manual     No     Alpha2 Alphanumeric Unicode Mixedcase Encoder
+   43  x86/unicode_upper                              manual     No     Alpha2 Alphanumeric Unicode Uppercase Encoder
+   44  x86/xor_dynamic                                normal     No     Dynamic key XOR Encoder
