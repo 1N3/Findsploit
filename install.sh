@@ -40,6 +40,8 @@ rm -f /usr/bin/compilesploit 2> /dev/null
 ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
 ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
 ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
+cp -f $INSTALL_DIR/findsploit.desktop /usr/share/applications/ 2> /dev/null
 echo -e "$OKORANGE + -- --=[ Done! $RESET"
+echo -e "$OKORANGE + -- --=[ To run, type 'findsploit'! $RESET"
 
 

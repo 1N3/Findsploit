@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=findsploit
+Encoding=UTF-8
+Exec=bash-wrapper "sudo findsploit"
+Icon=avatar-root
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=findsploit
+Comment=
+Path=
