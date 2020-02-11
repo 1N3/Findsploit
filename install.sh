@@ -24,7 +24,7 @@ echo -e "$OKRED+ -- --=[ https://xerosecurity.com$RESET"
 echo -e "$OKRED+ -- --=[ Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 
-echo -e "$OKORANGE + -- --=[ This script will install findsploit under $FINDSPLOIT_INSTALL_DIR. $RESET"
+echo -e "$OKORANGE + -- --=[ Installing findsploit under $FINDSPLOIT_INSTALL_DIR. $RESET"
 rm -Rf $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 mkdir -p $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 cp -Rf $PWD/* $FINDSPLOIT_INSTALL_DIR 
