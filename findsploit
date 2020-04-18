@@ -125,26 +125,29 @@ else
 	echo ""
 	$SEARCHSPLOIT_SCRIPT $VARS
 	echo ""	
-	echo 'https://www.exploit-db.com/search?q='$VAR1'+'$VAR2'+'$VAR3
-	echo 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit'
-	echo 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit+site:www.securityfocus.com'
-	echo 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:0day.today'
-	echo 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com'
-	echo 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:packetstormsecurity.com'
-	echo 'https://exploits.shodan.io/?q='$VAR1'+'$VAR2'+'$VAR3
-	echo 'https://vulners.com/search?query='$VAR1'+'$VAR2'+'$VAR3
+	VAR1=$(echo ${VAR1}| sed 's/\s\+/\%20/g')
+	VAR2=$(echo ${VAR2}| sed 's/\s\+/\%20/g')
+	VAR3=$(echo ${VAR3}| sed 's/\s\+/\%20/g')
+	echo "https://www.exploit-db.com/search?q=${VAR1}+${VAR2}+${VAR3}"
+	echo "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+exploit"
+	echo "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+exploit+site:www.securityfocus.com"
+	echo "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:0day.today"
+	echo "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:www.security-database.com"
+	echo "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:packetstormsecurity.com"
+	echo "https://exploits.shodan.io/?q=${VAR1}+${VAR2}+${VAR3}"
+	echo "https://vulners.com/search?query=${VAR1}+${VAR2}+${VAR3}"
 	echo ""
 	echo -e "$OKORANGE + -- --=[ Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
 	$BROWSER_CMD 'https://xerosecurity.com' 2> /dev/null &
 	sleep 5
-	$BROWSER_CMD 'https://www.exploit-db.com/search?q='$VAR1'+'$VAR2'+'$VAR3 2>/dev/null &> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null &> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit+site:www.securityfocus.com' 2> /dev/null &> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:0day.today' 2> /dev/null &> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:www.security-database.com' 2> /dev/null
-	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+site:packetstormsecurity.com' 2> /dev/null &> /dev/null
-	$BROWSER_CMD 'https://exploits.shodan.io/?q='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null &> /dev/null
-	$BROWSER_CMD 'https://vulners.com/search?query='$VAR1'+'$VAR2'+'$VAR3 2> /dev/null &> /dev/null
+	$BROWSER_CMD "https://www.exploit-db.com/search?q=${VAR1}+${VAR2}+${VAR3}" 2>/dev/null &> /dev/null
+	$BROWSER_CMD "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+exploit" 2>/dev/null &> /dev/null
+	$BROWSER_CMD "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+exploit+site:www.securityfocus.com" 2> /dev/null &> /dev/null
+	$BROWSER_CMD "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:0day.today" 2> /dev/null &> /dev/null
+	$BROWSER_CMD "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:www.security-database.com" 2> /dev/null
+	$BROWSER_CMD "https://www.google.ca/search?q=${VAR1}%20${VAR2}%20${VAR3}+site:packetstormsecurity.com" 2> /dev/null &> /dev/null
+	$BROWSER_CMD "https://exploits.shodan.io/?q=${VAR1}+${VAR2}+${VAR3}" 2> /dev/null &> /dev/null
+	$BROWSER_CMD "https://vulners.com/search?query=${VAR1}+${VAR2}+${VAR3}" 2> /dev/null &> /dev/null
 fi
 exit
