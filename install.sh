@@ -24,7 +24,7 @@ echo -e "$OKRED+ -- --=[ https://xerosecurity.com$RESET"
 echo -e "$OKRED+ -- --=[ Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 
-echo -e "$OKORANGE + -- --=[ Installing findsploit under $FINDSPLOIT_INSTALL_DIR. $RESET"
+echo -e "$OKBLUE[*]$RESET Installing findsploit under $FINDSPLOIT_INSTALL_DIR. $RESET"
 rm -Rf $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 mkdir -p $FINDSPLOIT_INSTALL_DIR 2> /dev/null
 cp -Rf $PWD/* $FINDSPLOIT_INSTALL_DIR 
@@ -41,7 +41,7 @@ ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
 ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
 ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
 cp -f $INSTALL_DIR/findsploit.desktop /usr/share/applications/ 2> /dev/null
-echo -e "$OKORANGE + -- --=[ Done! $RESET"
-echo -e "$OKORANGE + -- --=[ To run, type 'findsploit'! $RESET"
+echo -e "$OKBLUE[*]$RESET Done! $RESET"
+echo -e "$OKRED[>]$RESET To run, type 'findsploit'! $RESET"
 
 
