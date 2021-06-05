@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=findsploit
 Encoding=UTF-8
-Exec=bash-wrapper "sudo findsploit"
+Exec=/usr/share/kali-menu/exec-in-shell "sudo findsploit"
 Icon=avatar-root
 StartupNotify=false
 Terminal=true
