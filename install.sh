@@ -41,7 +41,7 @@ ln -s /usr/share/findsploit/findsploit /usr/bin/findsploit
 ln -s /usr/share/findsploit/copysploit /usr/bin/copysploit
 ln -s /usr/share/findsploit/compilesploit /usr/bin/compilesploit
 cp -f $INSTALL_DIR/findsploit.desktop /usr/share/applications/ 2> /dev/null
+cp -f $INSTALL_DIR/findsploit.desktop /usr/share/applications/findsploit.desktop 2> /dev/null
+cp -f $INSTALL_DIR/findsploit.desktop /usr/share/kali-menu/applications/findsploit.desktop2> /dev/null
 echo -e "$OKBLUE[*]$RESET Done! $RESET"
 echo -e "$OKRED[>]$RESET To run, type 'findsploit'! $RESET"
-
-
