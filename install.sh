@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install script for Findsploit by @xer0dayz
-# https://xerosecurity.com 
+# https://sn1persecurity.com 
 #
 
 FINDSPLOIT_INSTALL_DIR=/usr/share/findsploit
@@ -20,7 +20,7 @@ echo -e "$OKRED\/    |_|_| |_|\__,_|___/ .__/|_|\___/|_|\__|"
 echo -e "$OKRED                        |_|                  "
 echo -e "$RESET"
 echo -e "$OKRED+ -- --=[ findsploit by @xer0dayz"
-echo -e "$OKRED+ -- --=[ https://xerosecurity.com$RESET"
+echo -e "$OKRED+ -- --=[ https://sn1persecurity.com$RESET"
 echo -e "$OKRED+ -- --=[ Usage: findsploit windows xp remote, etc."
 echo -e "$RESET"
 

@@ -17,7 +17,7 @@ function logo {
 	echo -e "$COLOR3                        |_|                  "
 	echo ""
 	echo -e "$COLOR1+ -- --=[ findsploit by @xer0dayz"
-	echo -e "$COLOR1+ -- --=[ https://xerosecurity.com$RESET"
+	echo -e "$COLOR1+ -- --=[ https://sn1persecurity.com$RESET"
 	echo ""
 }
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Findsploit by @xer0dayz
-# https://xerosecurity.com
+# https://sn1persecurity.com
 #
 # Finsploit is a simple bash script to quickly and easily search both local and online exploit databases.
 #
@@ -37,7 +37,7 @@ function logo {
 	echo -e "$OKRED                        |_|                  "
 	echo ""
 	echo -e "$OKRED + -- --=[ findsploit v$VER by @xer0dayz"
-    echo -e "$OKRED + -- --=[ https://xerosecurity.com$RESET"
+    echo -e "$OKRED + -- --=[ https://sn1persecurity.com$RESET"
 	echo ""
 }
 
@@ -116,7 +116,7 @@ else
 	echo ""
 	echo -e "$OKORANGE + -- --=[ Press any key to search online or Ctrl+C to exit...$RESET"
 	read test
-	$BROWSER_CMD 'https://xerosecurity.com' 2> /dev/null &
+	$BROWSER_CMD 'https://sn1persecurity.com' 2> /dev/null &
 	sleep 5
 	$BROWSER_CMD 'https://www.exploit-db.com/search?q='$VAR1'+'$VAR2'+'$VAR3 2>/dev/null &> /dev/null
 	$BROWSER_CMD 'https://www.google.ca/search?q='$VAR1'%20'$VAR2'%20'$VAR3'+exploit' 2>/dev/null &> /dev/null

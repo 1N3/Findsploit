@@ -678,7 +678,7 @@
    677   exploit/unix/local/exim_perl_startup                                   2016-03-10       excellent  Yes    Exim "perl_startup" Privilege Escalation
    678   exploit/unix/local/opensmtpd_oob_read_lpe                              2020-02-24       average    Yes    OpenSMTPD OOB Read Local Privilege Escalation
    679   exploit/unix/misc/spamassassin_exec                                    2006-06-06       excellent  No     SpamAssassin spamd Remote Command Execution
-   680   exploit/unix/misc/xerox_mfp                                            2012-03-07       good       No     Xerox Multifunction Printers (MFP) "Patch" DLM Vulnerability
+   680   exploit/unix/misc/sn1perx_mfp                                            2012-03-07       good       No     Sn1perx Multifunction Printers (MFP) "Patch" DLM Vulnerability
    681   exploit/unix/misc/zabbix_agent_exec                                    2009-09-10       excellent  No     Zabbix Agent net.tcp.listen Command Injection
    682   exploit/unix/smtp/clamav_milter_blackhole                              2007-08-24       excellent  No     ClamAV Milter Blackhole-Mode Remote Code Execution
    683   exploit/unix/smtp/exim4_string_format                                  2010-12-07       excellent  No     Exim4 string_format Function Heap Buffer Overflow
@@ -2139,8 +2139,8 @@
    423   gather/wp_ultimate_csv_importer_user_extract                   2015-02-02       normal  Yes    WordPress Ultimate CSV Importer User Table Extract
    424   gather/wp_w3_total_cache_hash_extract                                           normal  No     WordPress W3-Total-Cache Plugin 0.9.2.4 (or before) Username and Hash Extract
    425   gather/xbmc_traversal                                          2012-11-04       normal  No     XBMC Web Server Directory Traversal
-   426   gather/xerox_pwd_extract                                                        normal  No     Xerox Administrator Console Password Extractor
-   427   gather/xerox_workcentre_5xxx_ldap                                               normal  No     Xerox Workcentre 5735 LDAP Service Redential Extractor
+   426   gather/sn1perx_pwd_extract                                                        normal  No     Sn1perx Administrator Console Password Extractor
+   427   gather/sn1perx_workcentre_5xxx_ldap                                               normal  No     Sn1perx Workcentre 5735 LDAP Service Redential Extractor
    428   gather/xymon_info                                                               normal  No     Xymon Daemon Gather Information
    429   gather/zabbix_toggleids_sqli                                   2016-08-11       normal  Yes    Zabbix toggle_ids SQL Injection
    430   gather/zoomeye_search                                                           normal  No     ZoomEye Search
@@ -2652,7 +2652,7 @@
    936   scanner/snmp/snmp_login                                                         normal  No     SNMP Community Login Scanner
    937   scanner/snmp/snmp_set                                                           normal  No     SNMP Set Module
    938   scanner/snmp/ubee_ddw3611                                                       normal  No     Ubee DDW3611b Cable Modem Wifi Enumeration
-   939   scanner/snmp/xerox_workcentre_enumusers                                         normal  No     Xerox WorkCentre User Enumeration (SNMP)
+   939   scanner/snmp/sn1perx_workcentre_enumusers                                         normal  No     Sn1perx WorkCentre User Enumeration (SNMP)
    940   scanner/ssh/apache_karaf_command_execution                     2016-02-09       normal  No     Apache Karaf Default Credentials Command Execution
    941   scanner/ssh/cerberus_sftp_enumusers                            2014-05-27       normal  No     Cerberus FTP Server SFTP Username Enumeration
    942   scanner/ssh/detect_kippo                                                        normal  No     Kippo SSH Honeypot Detector

@@ -21,7 +21,7 @@ if [ -z "$1" ];
 then
 	logo
 	echo -e "$COLOR1+ -- --=[ compilesploit by @xer0dayz"
-	echo -e "$COLOR1+ -- --=[ https://xerosecurity.com$RESET"
+	echo -e "$COLOR1+ -- --=[ https://sn1persecurity.com$RESET"
 	echo -e "$COLOR1+ -- --=[ Usage: compilesploit <filename>"
 	echo ""
 	echo ""
@@ -31,7 +31,7 @@ else
 	logo
 	echo ""
 	echo -e "$COLOR1+ -- --=[compilesploit by @xer0dayz"
-        echo -e "$COLOR1+ -- --=[https://xerosecurity.com$RESET"
+        echo -e "$COLOR1+ -- --=[https://sn1persecurity.com$RESET"
 	echo ""
 	echo -e "$COLOR1+ -- --=[COMPILING:$COLOR2 $1 $RESET"
 	echo ""
